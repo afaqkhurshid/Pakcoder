@@ -1,8 +1,62 @@
 @extends('layouts.default')
-
-@section('title', 'Home - Passion')
-
+@section('title', 'Home - PakCoder')
 @section('content')
+
+<style>
+  .hero-visual form {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+  }
+
+  .hero-visual .form-control,
+  .hero-visual select,
+  .hero-visual textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+
+  .hero-visual .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .select-drop-down option{
+    background: rgb(0 0 0);
+    color: #fff;
+  }
+
+  .hero-visual .form-control:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #00d084; /* theme green */
+    color: #fff;
+    box-shadow: none;
+  }
+
+  .hero-visual button {
+    background-color: #00d084;
+    border: none;
+    font-weight: bold;
+  }
+
+  .hero-visual button:hover {
+    background-color: #00b36b;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .hero-content {
+      text-align: center;
+    }
+    .hero-visual {
+      margin-top: 20px;
+    }
+    .hero-visual form {
+      width: 100%;
+    }
+  }
+</style>
 
 <main class="main">
 
@@ -13,50 +67,65 @@
     </div>
     <div class="container">
       <div class="row align-items-center">
+        
+        <!-- Left Text -->
         <div class="col-lg-6">
           <div class="hero-content">
-            <span class="hero-badge">It Solutions Experts</span>
+            <span class="hero-badge">IT SOLUTIONS EXPERTS</span>
             <h1>Fast, Scalable & Custom Web Solutions That Deliver Results</h1>
             <p>PakCoder builds fast, secure, and scalable products in Laravel, PHP, Mern, Mean, WordPress, and Shopify—plus UI/UX and digital marketing to grow them.</p>
             <ul class="hero-trust list-inline mb-3">
               <li class="list-inline-item">20+ happy clients</li>
               <li class="list-inline-item">Logistics & eCommerce specialists</li>
               <li class="list-inline-item">Dropshipping & Shopify expertise</li>
-              <li class="list-inline-item">End‑to‑end: Strategy → Design → Build → Growth</li>
+              <li class="list-inline-item">End-to-end: Strategy → Design → Build → Growth</li>
             </ul>
             <div class="hero-actions mb-2">
-              <a href="#portfolio" class="btn btn-primary">View Our Work</a>
-              <a href="#contact" class="btn btn-outline-secondary">Request a Quote</a>
+              <a href="#portfolio" class="btn btn-success">View Our Work</a>
+              <a href="#contact" class="btn btn-outline-light">Request a Quote</a>
             </div>
-            <div class="hero-microcopy small text-muted mt-1">100% free, no obligation. Response within 24 hours.</div>
           </div>
         </div>
+
+        <!-- Right Form -->
         <div class="col-lg-6">
           <div class="hero-visual">
-            <div class="row g-3">
-              <div class="col-6">
-                <div class="feature-card">
-                  <i class="bi bi-shield-check"></i>
-                  <span>Secure &amp; Reliable</span>
+            <form method="post" class="php-email-form">
+              @csrf
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
-                <div class="feature-card">
-                  <i class="bi bi-people"></i>
-                  <span>Expert Team</span>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="feature-card">
-                  <i class="bi bi-speedometer2"></i>
-                  <span>High Performance</span>
-                </div>
-                <div class="feature-card">
-                  <i class="bi bi-award"></i>
-                  <span>Award Winning</span>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
                 </div>
               </div>
-            </div>
+
+              <div class="row mt-3">
+                <div class="col-md-6 form-group">
+                  <select class="form-control select-drop-down" name="service" required>
+                    <option value="" disabled selected>What service do you need?</option>
+                    <option value="web-development">Web Development (Laravel/PHP)</option>
+                    <option value="wordpress">WordPress Development</option>
+                    <option value="shopify">Shopify/eCommerce</option>
+                    <option value="ui-ux">UI/UX Design</option>
+                    <option value="digital-marketing">Digital Marketing</option>
+                  </select>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="number" name="phone" class="form-control" placeholder="Your Phone" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+              </div>
+              <div class="form-submit mt-3">
+                <button type="submit" class="btn btn-primary w-100">Get Free Consultation</button>
+              </div>
+            </form>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -816,7 +885,7 @@
                 <img src="assets/img/p/h33.png" class="img-fluid" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>H3 Accountants</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Php,Wordpress</p>
                   <a href="assets/img/p/h33.png" class="glightbox preview-link">
                     <i class="bi bi-zoom-in"></i>
                   </a>
@@ -832,7 +901,7 @@
                 <img src="assets/img/p/milenow.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>MileNow (content hub)</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Php,Wordpress/p>
                   <a href="assets/img/p/milenow.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://www.milenow.com/en/new-dropshipping-management/" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -844,7 +913,7 @@
                 <img src="assets/img/p/xytech.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Xytech</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Php,Wordpress</p>
                   <a href="assets/img/p/xytech.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://xytech.io/" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -856,7 +925,7 @@
                 <img src="assets/img/p/visio.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Visiocell</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Php,Wordpress</p>
                   <a href="assets/img/p/visio.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://visiocell.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -868,7 +937,7 @@
                 <img src="assets/img/p/almarfa.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Almarfa</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Php,Wordpress</p>
                   <a href="assets/img/p/almarfa.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://almarfa.com.sa/" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -879,8 +948,8 @@
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
                 <img src="assets/img/p/africa-mobility-solutions.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
-                  <h4>Africa Mobility Solutions (ME)</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4>Africa Mobility Solutions</h4>
+                  <p>Laravel, PHP, Bootstrap</p>
                   <a href="assets/img/p/africa-mobility-solutions.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://africa-mobility-solutions-me.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -892,7 +961,7 @@
                 <img src="assets/img/p/mile.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>MileNow</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Php,Wordpress,Symfoney,Laravel,Crm</p>
                   <a href="assets/img/p/mile.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://www.milenow.com/en/" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -904,7 +973,7 @@
                 <img src="assets/img/p/rx.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>RxOnTrack (Netlify demo)</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Node.js,Vue.js,React.js</p>
                   <a href="assets/img/p/rx.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://rxontrack.netlify.app/" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -916,7 +985,7 @@
                 <img src="assets/img/p/compareparkingprices.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Compare Parking Prices</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Vue.js,Laravel</p>
                   <a href="assets/img/p/compareparkingprices.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://www.compareparkingprices.co.uk/" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -928,7 +997,7 @@
                 <img src="assets/img/p/bellezabh.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Belleza BH</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Laravel,Bootstrap</p>
                   <a href="assets/img/p/bellezabh.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://bellezabh.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -940,7 +1009,7 @@
                 <img src="assets/img/p/flasholr.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>FlashOLR</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Php,Laravel,Bootstrapr</p>
                   <a href="assets/img/p/flasholr.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://flasholr.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -952,7 +1021,7 @@
                 <img src="assets/img/p/samarqand.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Samarqand Fabrics</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Shopify</p>
                   <a href="assets/img/p/samarqand.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://samarqandfabrics.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -964,7 +1033,7 @@
                 <img src="assets/img/p/mughaliaz.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Mughaliaz</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Shopify</p>
                   <a href="assets/img/p/mughaliaz.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://mughaliaz.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -976,7 +1045,7 @@
                 <img src="assets/img/p/sunnybloom.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Sunny Bloom</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Shopify</p>
                   <a href="assets/img/p/sunnybloom.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://sunnybloom.co.uk/" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -1212,7 +1281,8 @@
             <h3>Get a Free Strategy Session</h3>
             <p>Have a project in mind? Contact us for a free consultation. We'll respond within 24 hours.</p>
 
-            <form action="forms/contact.php" method="post" class="php-email-form">
+            <form method="post" class="php-email-form">
+              @csrf
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -1221,15 +1291,20 @@
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
-              <div class="form-group mt-3">
-                <select class="form-control" name="service" id="service" required>
-                  <option value="" disabled selected>What service do you need?</option>
-                  <option value="web-development">Web Development (Laravel/PHP)</option>
-                  <option value="wordpress">WordPress Development</option>
-                  <option value="shopify">Shopify/eCommerce</option>
-                  <option value="ui-ux">UI/UX Design</option>
-                  <option value="digital-marketing">Digital Marketing</option>
-                </select>
+                <div class="row mt-3">
+                  <div class="col-md-6 form-group">
+                    <select class="form-control" name="service" id="service" required>
+                      <option value="" disabled selected>What service do you need?</option>
+                      <option value="web-development">Web Development (Laravel/PHP)</option>
+                      <option value="wordpress">WordPress Development</option>
+                      <option value="shopify">Shopify/eCommerce</option>
+                      <option value="ui-ux">UI/UX Design</option>
+                      <option value="digital-marketing">Digital Marketing</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="number" name="phone" class="form-control" id="phone" placeholder="Your Phone" required>
+                  </div>
               </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
@@ -1492,4 +1567,82 @@
   </section>
 </main>
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+
+$(document).ready(function() {
+    $('.php-email-form').submit(function(e) {
+        e.preventDefault();
+        
+        var form = $(this);
+        var submitBtn = form.find('button[type="submit"]');
+        
+        // Check if submit button exists
+        if(submitBtn.length === 0) {
+            console.error('Submit button not found in the form');
+            return;
+        }
+        
+        var originalBtnText = submitBtn.html();
+        
+        // Show loading state
+        submitBtn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...');
+        
+        $.ajax({
+            url: form.attr('action') || '{{ route("contact.submit") }}', // Fallback if action attribute is missing
+            type: 'post',
+            data: form.serialize(),
+            dataType: 'json',
+            success: function(response) {
+                if(response.success) {
+                    // Show success message
+                    form.prepend(
+                        '<div class="alert alert-success alert-dismissible fade show" role="alert">' +
+                        'Thank you! Your message has been sent. We will contact you soon.' +
+                        '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                        '</div>'
+                    );
+                    
+                    // Reset form
+                    form.trigger('reset');
+                } else {
+                    // Show error message
+                    form.prepend(
+                        '<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
+                        'Error: ' + (response.message || 'Something went wrong. Please try again.') +
+                        '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                        '</div>'
+                    );
+                }
+            },
+            error: function(xhr) {
+                var errorMessage = 'An error occurred. Please try again.';
+                if(xhr.responseJSON && xhr.responseJSON.message) {
+                    errorMessage = xhr.responseJSON.message;
+                } else if(xhr.statusText) {
+                    errorMessage = xhr.statusText;
+                }
+                
+                form.prepend(
+                    '<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
+                    errorMessage +
+                    '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                    '</div>'
+                );
+            },
+            complete: function() {
+                submitBtn.prop('disabled', false).html(originalBtnText);
+                
+                // Remove alerts after 5 seconds
+                setTimeout(function() {
+                    form.find('.alert').fadeOut(500, function() {
+                        $(this).remove();
+                    });
+                }, 5000);
+            }
+        });
+    });
+});
+
+</script>
 @endsection

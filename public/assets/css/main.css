@@ -1405,7 +1405,7 @@ section,
   }
 
   .hero .hero-actions {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
     gap: 16px;
   }
@@ -2436,7 +2436,7 @@ section,
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("../img/abstract-bg-3.webp") center/cover;
+  /* background: url("../img/abstract-bg-3.webp") center/cover; */
   opacity: 0.03;
   z-index: 1;
 }

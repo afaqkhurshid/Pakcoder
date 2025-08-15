@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ErrorController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PortfolioController;
@@ -16,3 +17,5 @@ Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio
 Route::get('/page-not-found', [ErrorController::class, 'index'])->name('page-not-found');
 Route::get('/service-details', [ServiceDetailsrController::class, 'index'])->name('service-details');
 Route::get('/terms-conditions', [TermsConditionController::class, 'index'])->name('terms-conditions');
+
+Route::post('/forms/contact', [ContactController::class, 'store'])->name('contact.submit');
