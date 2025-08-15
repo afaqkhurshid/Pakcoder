@@ -8,7 +8,7 @@
 
   <section id="hero" class="hero section dark-background">
     <div class="hero-background">
-      <img src="assets/img/bg/bg-14.webp" alt="" data-aos-duration="1000">
+      <img src="img/bg/bg-14.webp" alt="" data-aos-duration="1000">
       <div class="overlay"></div>
     </div>
     <div class="container">
@@ -106,7 +106,7 @@
 
         <div class="col-lg-6">
           <div class="image-wrapper">
-            <img src="assets/img/about/about-square-8.webp" alt="About Us" class="img-fluid main-image">
+            <img src="img/about/about-square-8.webp" alt="About Us" class="img-fluid main-image">
             <div class="floating-card">
               <div class="card-content">
                 <i class="bi bi-award"></i>
@@ -167,73 +167,73 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="client-logo">
-              <img src="assets/img/clients/clients-1.webp" class="img-fluid" alt="">
+              <img src="img/clients/clients-1.webp" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
           <div class="swiper-slide">
             <div class="client-logo">
-              <img src="assets/img/clients/clients-2.webp" class="img-fluid" alt="">
+              <img src="img/clients/clients-2.webp" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
           <div class="swiper-slide">
             <div class="client-logo">
-              <img src="assets/img/clients/clients-3.webp" class="img-fluid" alt="">
+              <img src="img/clients/clients-3.webp" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
           <div class="swiper-slide">
             <div class="client-logo">
-              <img src="assets/img/clients/clients-4.webp" class="img-fluid" alt="">
+              <img src="img/clients/clients-4.webp" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
           <div class="swiper-slide">
             <div class="client-logo">
-              <img src="assets/img/clients/clients-5.webp" class="img-fluid" alt="">
+              <img src="img/clients/clients-5.webp" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
           <div class="swiper-slide">
             <div class="client-logo">
-              <img src="assets/img/clients/clients-6.webp" class="img-fluid" alt="">
+              <img src="img/clients/clients-6.webp" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
           <div class="swiper-slide">
             <div class="client-logo">
-              <img src="assets/img/clients/clients-1.webp" class="img-fluid" alt="">
+              <img src="img/clients/clients-1.webp" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
           <div class="swiper-slide">
             <div class="client-logo">
-              <img src="assets/img/clients/clients-2.webp" class="img-fluid" alt="">
+              <img src="img/clients/clients-2.webp" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
           <div class="swiper-slide">
             <div class="client-logo">
-              <img src="assets/img/clients/clients-3.webp" class="img-fluid" alt="">
+              <img src="img/clients/clients-3.webp" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
           <div class="swiper-slide">
             <div class="client-logo">
-              <img src="assets/img/clients/clients-4.webp" class="img-fluid" alt="">
+              <img src="img/clients/clients-4.webp" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
           <div class="swiper-slide">
             <div class="client-logo">
-              <img src="assets/img/clients/clients-5.webp" class="img-fluid" alt="">
+              <img src="img/clients/clients-5.webp" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
           <div class="swiper-slide">
             <div class="client-logo">
-              <img src="assets/img/clients/clients-6.webp" class="img-fluid" alt="">
+              <img src="img/clients/clients-6.webp" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
         </div>
@@ -272,7 +272,7 @@
         </div>
         <div class="col-lg-6">
           <div class="services-image">
-            <img src="assets/img/services/it-marketing-team.jpg" alt="IT & Marketing Solutions" class="rounded-4" style="width: 600px;">
+            <img src="img/services/it-marketing-team.jpg" alt="IT & Marketing Solutions" class="rounded-4" style="width: 600px;">
             <div class="shape-circle"></div>
             <div class="shape-accent"></div>
           </div>
@@ -664,7 +664,7 @@
 
           <div class="col-lg-5">
             <div class="cta-image-container">
-              <img src="assets/img/illustration/illustration-3.webp" alt="Shopify & WordPress Offer" class="img-fluid main-image">
+              <img src="img/illustration/illustration-3.webp" alt="Shopify & WordPress Offer" class="img-fluid main-image">
               <div class="floating-element element-1">
                 <i class="bi bi-star-fill"></i>
                 <span>4.9 Rating</span>
@@ -723,7 +723,7 @@
                 <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="assets/img/person/person-m-9.webp" class="testimonial-img" alt="">
+              <img src="img/person/person-m-9.webp" class="testimonial-img" alt="">
               <h3>Saul Goodman</h3>
               <h4>Ceo &amp; Founder</h4>
             </div>
@@ -736,7 +736,7 @@
                 <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="assets/img/person/person-f-5.webp" class="testimonial-img" alt="">
+              <img src="img/person/person-f-5.webp" class="testimonial-img" alt="">
               <h3>Sara Wilsson</h3>
               <h4>Designer</h4>
             </div>
@@ -749,7 +749,7 @@
                 <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="assets/img/person/person-f-12.webp" class="testimonial-img" alt="">
+              <img src="img/person/person-f-12.webp" class="testimonial-img" alt="">
               <h3>Jena Karlis</h3>
               <h4>Store Owner</h4>
             </div>
@@ -762,7 +762,7 @@
                 <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="assets/img/person/person-m-12.webp" class="testimonial-img" alt="">
+              <img src="img/person/person-m-12.webp" class="testimonial-img" alt="">
               <h3>Matt Brandon</h3>
               <h4>Freelancer</h4>
             </div>
@@ -775,7 +775,7 @@
                 <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="assets/img/person/person-m-13.webp" class="testimonial-img" alt="">
+              <img src="img/person/person-m-13.webp" class="testimonial-img" alt="">
               <h3>John Larson</h3>
               <h4>Entrepreneur</h4>
             </div>
@@ -813,15 +813,15 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="assets/img/p/h33.png" class="img-fluid" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/h33.png" class="img-fluid" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>H3 Accountants</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/p/h33.png" class="glightbox preview-link">
+                  <a href="img/portfolio/h33.png" class="glightbox preview-link">
                     <i class="bi bi-zoom-in"></i>
                   </a>
                   <a href="https://h3accountants.com.au/" class="details-link">
-                    <i class="bi bi-link-45deg"></i>
+                    <i class="bi bi-arrow-right-short"></i>
                   </a>
                 </div>
               </div>
@@ -829,156 +829,182 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="assets/img/p/milenow.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/milenow.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>MileNow (content hub)</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/p/milenow.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://www.milenow.com/en/new-dropshipping-management/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="img/portfolio/milenow.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.milenow.com/en/new-dropshipping-management/" class="details-link">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="assets/img/p/xytech.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/xytech.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Xytech</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/p/xytech.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://xytech.io/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="img/portfolio/xytech.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://xytech.io/" class="details-link">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="assets/img/p/visio.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/visio.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Visiocell</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/p/visio.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://visiocell.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="img/portfolio/visio.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://visiocell.com/" class="details-link">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="assets/img/p/almarfa.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/almarfa.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Almarfa</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/p/almarfa.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://almarfa.com.sa/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="img/portfolio/almarfa.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://almarfa.com.sa/" class="details-link">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="assets/img/p/africa-mobility-solutions.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/africa-mobility-solutions.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Africa Mobility Solutions (ME)</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/p/africa-mobility-solutions.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://africa-mobility-solutions-me.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="img/portfolio/africa-mobility-solutions.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://africa-mobility-solutions-me.com/" class="details-link">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="assets/img/p/mile.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/mile.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>MileNow</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/p/mile.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://www.milenow.com/en/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="img/portfolio/mile.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.milenow.com/en/" class="details-link">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="assets/img/p/rx.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/rx.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>RxOnTrack (Netlify demo)</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/p/rx.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://rxontrack.netlify.app/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="img/portfolio/rx.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://rxontrack.netlify.app/" class="details-link">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="assets/img/p/compareparkingprices.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/compareparkingprices.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Compare Parking Prices</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/p/compareparkingprices.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://www.compareparkingprices.co.uk/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="img/portfolio/compareparkingprices.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.compareparkingprices.co.uk/" class="details-link">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="assets/img/p/bellezabh.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/bellezabh.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Belleza BH</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/p/bellezabh.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://bellezabh.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="img/portfolio/bellezabh.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://bellezabh.com/" class="details-link">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="assets/img/p/flasholr.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/flasholr.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>FlashOLR</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/p/flasholr.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://flasholr.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="img/portfolio/flasholr.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://flasholr.com/" class="details-link">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-shopify">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="assets/img/p/samarqand.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/samarqand.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Samarqand Fabrics</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/p/samarqand.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://samarqandfabrics.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="img/portfolio/samarqand.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://samarqandfabrics.com/" class="details-link">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-shopify">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="assets/img/p/mughaliaz.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/mughaliaz.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Mughaliaz</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/p/mughaliaz.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://mughaliaz.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="img/portfolio/mughaliaz.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://mughaliaz.com/" class="details-link">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-shopify">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="assets/img/p/sunnybloom.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/sunnybloom.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Sunny Bloom</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/p/sunnybloom.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://sunnybloom.co.uk/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="img/portfolio/sunnybloom.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://sunnybloom.co.uk/" class="details-link">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1037,36 +1063,21 @@
           <div class="swiper-slide">
             <div class="team-card">
               <div class="team-image">
-                <img src="assets/img/person/person-m-3.webp" class="img-fluid" alt="" loading="lazy">
-                <div class="team-overlay">
-                  <div class="social-links">
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
+                <img src="img/person/awaiskhizar.webp" class="img-fluid" alt="" loading="lazy">
               </div>
               <div class="team-content">
                 <h3>Awais Khizar</h3>
                 <span>CEO & Digital Marketing Expert</span>
                 <p>Founder and leader of PakCoder, specializing in delivering complete digital marketing solutions that boost brand growth and online presence.</p>
               </div>
-            </div><!-- End Team Card -->
+            </div>
+            <!-- End Team Card -->
           </div><!-- End slide item -->
 
           <div class="swiper-slide">
             <div class="team-card">
               <div class="team-image">
-                <img src="assets/img/person/person-f-5.webp" class="img-fluid" alt="" loading="lazy">
-                <div class="team-overlay">
-                  <div class="social-links">
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
+                <img src="img/person/afaqkhurshid.webp" class="img-fluid" alt="" loading="lazy">
               </div>
               <div class="team-content">
                 <h3>Afaq Khurshid</h3>
@@ -1079,15 +1090,7 @@
           <div class="swiper-slide">
             <div class="team-card">
               <div class="team-image">
-                <img src="assets/img/person/person-m-8.webp" class="img-fluid" alt="" loading="lazy">
-                <div class="team-overlay">
-                  <div class="social-links">
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
+                <img src="img/person/hamza.webp" class="img-fluid" alt="" loading="lazy">
               </div>
               <div class="team-content">
                 <h3>Hamza</h3>
@@ -1100,15 +1103,7 @@
           <div class="swiper-slide">
             <div class="team-card">
               <div class="team-image">
-                <img src="assets/img/person/person-f-9.webp" class="img-fluid" alt="" loading="lazy">
-                <div class="team-overlay">
-                  <div class="social-links">
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
+                <img src="img/person/umer.webp" class="img-fluid" alt="" loading="lazy">
               </div>
               <div class="team-content">
                 <h3>Umer</h3>
@@ -1121,18 +1116,10 @@
           <div class="swiper-slide">
             <div class="team-card">
               <div class="team-image">
-                <img src="assets/img/person/person-f-9.webp" class="img-fluid" alt="" loading="lazy">
-                <div class="team-overlay">
-                  <div class="social-links">
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
+                <img src="img/person/umer.webp" class="img-fluid" alt="" loading="lazy">
               </div>
               <div class="team-content">
-                <h3>Umer</h3>
+                <h3>Usman</h3>
                 <span>Kotlin & Java Mobile App Developer</span>
                 <p>Specialist in creating powerful and user-friendly Android applications using Kotlin and Java.</p>
               </div>
@@ -1482,7 +1469,7 @@
 
           <div class="text-center mt-5 pt-4">
             <h4 class="mb-4">Still have questions?</h4>
-            <a href="#contact" class="btn btn-lg px-4" style="background-color:#12a16b; border:none;">
+            <a href="#contact" class="btn btn-lg px-4" style="background-color:#12a16b; border:none; color:white">
               <i class="bi bi-chat-left-text me-2"></i> Get Personalized Answers
             </a>
           </div>
