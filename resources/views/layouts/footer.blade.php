@@ -35,9 +35,9 @@
       </div>
       <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
         <h4>Contact Us</h4>
-        <p>A108 Adam Street</p>
-        <p>New York, NY 535022</p>
-        <p>United States</p>
+        <p>41 Paragon City Main Blvd,</p>
+        <p>Imperial Garden Homes Paragon City,</p>
+        <p>Lahore, Pakistan</p>
         <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
         <p><strong>Email:</strong> <span>info@example.com</span></p>
       </div>
