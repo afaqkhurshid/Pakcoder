@@ -903,7 +903,7 @@
                   <h4>MileNow (content hub)</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/milenow.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://www.milenow.com/en/new-dropshipping-management/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://www.milenow.com/en/new-dropshipping-management/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -915,7 +915,7 @@
                   <h4>Xytech</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/xytech.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://xytech.io/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://xytech.io/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -927,7 +927,7 @@
                   <h4>Visiocell</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/visio.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://visiocell.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://visiocell.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -939,7 +939,7 @@
                   <h4>Almarfa</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/almarfa.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://almarfa.com.sa/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://almarfa.com.sa/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -951,7 +951,7 @@
                   <h4>Africa Mobility Solutions (ME)</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/africa-mobility-solutions.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://africa-mobility-solutions-me.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://africa-mobility-solutions-me.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -963,7 +963,7 @@
                   <h4>MileNow</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/mile.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://www.milenow.com/en/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://www.milenow.com/en/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -975,7 +975,7 @@
                   <h4>RxOnTrack (Netlify demo)</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/rx.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://rxontrack.netlify.app/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://rxontrack.netlify.app/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -987,7 +987,7 @@
                   <h4>Compare Parking Prices</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/compareparkingprices.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://www.compareparkingprices.co.uk/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://www.compareparkingprices.co.uk/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -999,7 +999,7 @@
                   <h4>Belleza BH</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/bellezabh.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://bellezabh.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://bellezabh.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -1011,7 +1011,7 @@
                   <h4>FlashOLR</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/flasholr.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://flasholr.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://flasholr.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -1023,7 +1023,7 @@
                   <h4>Samarqand Fabrics</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/samarqand.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://samarqandfabrics.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://samarqandfabrics.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -1035,7 +1035,7 @@
                   <h4>Mughaliaz</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/mughaliaz.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://mughaliaz.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://mughaliaz.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -1047,7 +1047,7 @@
                   <h4>Sunny Bloom</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/sunnybloom.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://sunnybloom.co.uk/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://sunnybloom.co.uk/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
