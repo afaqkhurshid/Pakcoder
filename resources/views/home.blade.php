@@ -789,12 +789,12 @@
             <div class="testimonial-item">
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                <span>PakCoder built our Shopify store from the ground up with a strong focus on performance and scalability. Their expertise helped Mughaliaz.com grow faster, and they continue to be a reliable partner for our eCommerce journey.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="img/person/person-m-9.webp" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
+              {{-- <img src="img/person/person-m-9.webp" class="testimonial-img" alt=""> --}}
+              <h3>Moon Ali</h3>
+              <h4>Founder – Mughaliaz.com</h4>
             </div>
           </div>
 
@@ -802,12 +802,12 @@
             <div class="testimonial-item">
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                <span>We partnered with PakCoder to run digital campaigns for NICS CSS Academy, and the results were excellent. Their strategic approach brought us high-quality leads and greater visibility among our target audience.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="img/person/person-f-5.webp" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
+              {{-- <img src="img/person/person-f-5.webp" class="testimonial-img" alt=""> --}}
+              <h3>Muhammad Farukh</h3>
+              <h4>CEO – NICS CSS Academy</h4>
             </div>
           </div>
 
@@ -815,12 +815,12 @@
             <div class="testimonial-item">
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                <span>PakCoder designed and executed a successful lead generation campaign for Data Estate. Their work delivered measurable results, and we saw a significant increase in client conversions thanks to their efforts.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="img/person/person-f-12.webp" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
+              {{-- <img src="img/person/person-f-12.webp" class="testimonial-img" alt=""> --}}
+              <h3>Ijaz Ahmad</h3>
+              <h4>Founder – Data Estate</h4>
             </div>
           </div>
 
@@ -828,27 +828,15 @@
             <div class="testimonial-item">
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                <span>We trusted PakCoder to build our Laravel project with Bootstrap from scratch, and they delivered flawlessly. They deployed it to our server, ensuring a smooth launch. Their technical depth and reliability set them apart.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <img src="img/person/person-m-12.webp" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
+              {{-- <img src="img/person/person-m-12.webp" class="testimonial-img" alt=""> --}}
+              <h3>Majid Sheikh</h3>
+              <h4>CTO – AMS</h4>
             </div>
           </div>
 
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-              <img src="img/person/person-m-13.webp" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
-            </div>
-          </div>
 
         </div>
         <div class="swiper-pagination"></div>
@@ -864,8 +852,9 @@
 
     <!-- Section Title -->
     <div class="container section-title">
-      <h2>Portfolio</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <h2>Portfolio</h2>
+    <p>Explore our work — from custom websites to powerful web applications, showcasing creativity, performance, and results.</p>
+
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -877,9 +866,23 @@
             <li data-filter=".filter-wordpress">WordPress</li>
             <li data-filter=".filter-laravel-symfony">Laravel & Symfony</li>
             <li data-filter=".filter-shopify">Shopify</li>
+            <li data-filter=".filter-digital">Digital Marketing</li>
           </ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
+              <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
+                <img src="img/portfolio/africa-mobility-solutions.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <div class="portfolio-info flex-grow-1">
+                  <h4>Africa Mobility Solutions (ME)</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="/img/portfolio/africa-mobility-solutions.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://africa-mobility-solutions-me.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
+                </div>
+              </div>
+            </div>
+
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
                 <img src="img/portfolio/h33.png" class="img-fluid" alt="" style="height:250px; object-fit:cover;">
@@ -892,6 +895,30 @@
                   <a href="https://h3accountants.com.au/" class="details-link">
                     <i class="bi bi-arrow-right-short"></i>
                   </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
+              <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
+                <img src="img/portfolio/almarfa.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <div class="portfolio-info flex-grow-1">
+                  <h4>Almarfa</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="/img/portfolio/almarfa.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://almarfa.com.sa/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
+              <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
+                <img src="img/portfolio/mile.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <div class="portfolio-info flex-grow-1">
+                  <h4>MileNow</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="/img/portfolio/mile.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.milenow.com/en/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -916,54 +943,6 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/xytech.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://xytech.io/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
-              <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/visio.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
-                <div class="portfolio-info flex-grow-1">
-                  <h4>Visiocell</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="/img/portfolio/visio.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://visiocell.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
-              <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/almarfa.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
-                <div class="portfolio-info flex-grow-1">
-                  <h4>Almarfa</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="/img/portfolio/almarfa.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://almarfa.com.sa/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
-              <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/africa-mobility-solutions.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
-                <div class="portfolio-info flex-grow-1">
-                  <h4>Africa Mobility Solutions (ME)</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="/img/portfolio/africa-mobility-solutions.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://africa-mobility-solutions-me.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
-              <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/mile.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
-                <div class="portfolio-info flex-grow-1">
-                  <h4>MileNow</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="/img/portfolio/mile.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://www.milenow.com/en/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -1000,6 +979,18 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/bellezabh.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://bellezabh.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
+              <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
+                <img src="img/portfolio/visio.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <div class="portfolio-info flex-grow-1">
+                  <h4>Visiocell</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="/img/portfolio/visio.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://visiocell.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
@@ -1047,6 +1038,56 @@
                   <h4>Sunny Bloom</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/sunnybloom.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://sunnybloom.co.uk/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
+                </div>
+              </div>
+            </div>
+
+            {{-- digital marketing --}}
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+              <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
+                <img src="img/portfolio/nics.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <div class="portfolio-info flex-grow-1">
+                  <h4>NICS CSS Leads Ads</h4>
+                  <p>We generate 500+ Leads in just one week</p>
+                  <a href="/img/portfolio/nics.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.facebook.com/NICSLHR" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+              <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
+                <img src="img/portfolio/Mughaliaz.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <div class="portfolio-info flex-grow-1">
+                  <h4>Mughaliaz Sales Ads</h4>
+                  <p>2-10 million sale in just Three Month</p>
+                  <a href="/img/portfolio/Mughaliaz.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://mughaliaz.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+              <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
+                <img src="img/portfolio/hotel.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <div class="portfolio-info flex-grow-1">
+                  <h4>Toor Hotel Appartments Leads Ads</h4>
+                  <p>We deliver 300+ targeted leads.</p>
+                  <a href="/img/portfolio/hotel.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.facebook.com/toorhotelapartments" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+              <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
+                <img src="img/portfolio/spectra.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <div class="portfolio-info flex-grow-1">
+                  <h4>Sunny Bloom</h4>
+                  <p>Generated 5M+ in sales within 4 months.</p>
+                  <a href="/img/portfolio/spectra.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://sunnybloom.co.uk/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1106,7 +1147,7 @@
           <div class="swiper-slide">
             <div class="team-card">
               <div class="team-image">
-                <img src="img/person/awaiskhizar.webp" class="img-fluid" alt="" loading="lazy">
+                <img src="img/person/awaisKhizar.jpg" class="img-fluid" alt="" loading="lazy" style="width:500px;height:300px;">
               </div>
               <div class="team-content">
                 <h3>Awais Khizar</h3>
@@ -1120,7 +1161,7 @@
           <div class="swiper-slide">
             <div class="team-card">
               <div class="team-image">
-                <img src="img/person/afaqkhurshid.webp" class="img-fluid" alt="" loading="lazy">
+                <img src="img/person/afaqk.jpg" class="img-fluid" alt="" loading="lazy" style="width:500px;height:300px;">
               </div>
               <div class="team-content">
                 <h3>Afaq Khurshid</h3>
@@ -1133,11 +1174,11 @@
           <div class="swiper-slide">
             <div class="team-card">
               <div class="team-image">
-                <img src="img/person/hamza.webp" class="img-fluid" alt="" loading="lazy">
+                <img src="img/person/HafizSammad.jpg" class="img-fluid" alt="" loading="lazy" style="width:500px;height:300px;">
               </div>
               <div class="team-content">
-                <h3>Hamza</h3>
-                <span>Senior MERN Stack Developer & Project Manager</span>
+                <h3>Hafiz Sammad</h3>
+                <span>Senior MERN Stack Developer & React Native</span>
                 <p>Oversees project execution and builds robust MERN stack solutions that meet business needs and timelines.</p>
               </div>
             </div><!-- End Team Card -->
@@ -1146,7 +1187,7 @@
           <div class="swiper-slide">
             <div class="team-card">
               <div class="team-image">
-                <img src="img/person/umer.webp" class="img-fluid" alt="" loading="lazy">
+                <img src="img/person/umerAi.jpg" class="img-fluid" alt="" loading="lazy" style="width:500px;height:300px;">
               </div>
               <div class="team-content">
                 <h3>Umer</h3>
@@ -1159,12 +1200,12 @@
           <div class="swiper-slide">
             <div class="team-card">
               <div class="team-image">
-                <img src="img/person/umer.webp" class="img-fluid" alt="" loading="lazy">
+                <img src="img/person/shzad.jpg" class="img-fluid" alt="" loading="lazy" style="width:500px;height:300px;">
               </div>
               <div class="team-content">
-                <h3>Usman</h3>
-                <span>Kotlin & Java Mobile App Developer</span>
-                <p>Specialist in creating powerful and user-friendly Android applications using Kotlin and Java.</p>
+                <h3>Shahzad Sultan</h3>
+                <span>Shopify & WordPress Developer</span>
+                <p>Expert in building custom Shopify stores and dynamic WordPress websites that are fast, secure, and easy to manage.</p>
               </div>
             </div><!-- End Team Card -->
           </div><!-- End slide item -->
@@ -1190,10 +1231,10 @@
     </div><!-- End Section Title -->
 
     <div class="container">
-      <div class="contact-main-wrapper">
-        <div class="map-wrapper">
+      {{-- <div class="contact-main-wrapper"> --}}
+        {{-- <div class="map-wrapper">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.21520917933!2d-73.987844924266!3d40.74844097138986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1712345678901!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        </div> --}}
 
         <div class="contact-content">
           <div class="contact-cards-container">
@@ -1203,7 +1244,7 @@
               </div>
               <div class="contact-text">
                 <h4>Location</h4>
-                <p>Islamabad, Pakistan</p>
+                <p>Lahore, Pakistan</p>
               </div>
             </div>
 
@@ -1213,7 +1254,11 @@
               </div>
               <div class="contact-text">
                 <h4>Email</h4>
-                <p>hello@pakcoder.com</p>
+                <p>
+                  <a href="mailto:thepakcoder@gmail.com" class="text-decoration-none">
+                    thepakcoder@gmail.com
+                  </a>
+                </p>
               </div>
             </div>
 
@@ -1223,7 +1268,11 @@
               </div>
               <div class="contact-text">
                 <h4>Call/WhatsApp</h4>
-                <p>+92 313 4672846</p>
+                <p>
+                  <a href="https://wa.me/923134672846" target="_blank" class="text-decoration-none">
+                    +92 313 4672846
+                  </a>
+                </p>
               </div>
             </div>
 
@@ -1233,7 +1282,7 @@
               </div>
               <div class="contact-text">
                 <h4>Open Hours</h4>
-                <p>Monday-Friday: 9AM - 6PM (PST)</p>
+                <p>Monday-Saturday: 10AM - 10PM (PST)</p>
               </div>
             </div>
           </div>
@@ -1281,14 +1330,14 @@
                 <button type="submit" class="btn btn-primary">Get Free Consultation</button>
                 <div class="social-links mt-3">
                   <a href="https://wa.me/923134672846" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-                  <a href="https://twitter.com/pakcoder" target="_blank" title="Twitter"><i class="bi bi-twitter-x"></i></a>
-                  <a href="https://linkedin.com/company/pakcoder" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  {{-- <a href="https://twitter.com/pakcoder" target="_blank" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://linkedin.com/company/pakcoder" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a> --}}
                 </div>
               </div>
             </form>
           </div>
         </div>
-      </div>
+      {{-- </div> --}}
     </div>
   </section><!-- /Contact Section -->
 

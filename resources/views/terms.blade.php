@@ -7,157 +7,113 @@
 <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url(assets/img/bg/bg-14.webp);">
-      <div class="container position-relative">
-        <h1>Terms</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="">Home</a></li>
-            <li class="current">Terms</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
+    <div class="page-title dark-background" style="background-image: url({{ asset('assets/img/bg/bg-14.webp') }});">
+        <div class="container position-relative">
+            <h1>Terms & Conditions</h1>
+            <p>Welcome to Passion. Please review our Terms & Conditions carefully before using our services.</p>
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="{{ url('/') }}">Home</a></li>
+                    <li class="current">Terms & Conditions</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- End Page Title -->
 
     <!-- Terms Of Service Section -->
     <section id="terms-of-service" class="terms-of-service section">
+        <div class="container">
 
-      <div class="container">
-        <!-- Page Header -->
-        <div class="tos-header text-center">
-          <span class="last-updated">Last Updated: February 27, 2025</span>
-          <h2>Terms of Service</h2>
-          <p>Please read these terms of service carefully before using our services</p>
+            <!-- Page Header -->
+            <div class="tos-header text-center">
+                <span class="last-updated">Last Updated: {{ now()->format('F d, Y') }}</span>
+                <h2>Terms of Service</h2>
+                <p>By accessing and using our services, you agree to the following terms.</p>
+            </div>
+
+            <!-- Content -->
+            <div class="tos-content">
+
+                <div id="agreement" class="content-section">
+                    <h3>1. Agreement to Terms</h3>
+                    <p>By using our website and services, you agree to be bound by these Terms. If you do not agree, please discontinue use immediately.</p>
+                </div>
+
+                <div id="intellectual-property" class="content-section">
+                    <h3>2. Intellectual Property</h3>
+                    <p>All content, branding, and features of our services are owned by us and protected under international intellectual property laws.</p>
+                    <ul class="list-items">
+                        <li>Content is for personal, non-commercial use</li>
+                        <li>No copying, modification, or redistribution without consent</li>
+                        <li>Trademarks and logos cannot be used without permission</li>
+                    </ul>
+                </div>
+
+                <div id="user-accounts" class="content-section">
+                    <h3>3. User Accounts</h3>
+                    <p>You must provide accurate details when creating an account. You are responsible for safeguarding your password and account activity.</p>
+                </div>
+
+                <div id="prohibited" class="content-section">
+                    <h3>4. Prohibited Activities</h3>
+                    <p>You agree not to misuse our services. Restricted activities include:</p>
+                    <ul class="list-items">
+                        <li>Unauthorized access or hacking attempts</li>
+                        <li>Distributing malware or harmful content</li>
+                        <li>Data scraping or automated retrieval</li>
+                        <li>Framing or impersonation of our services</li>
+                    </ul>
+                </div>
+
+                <div id="disclaimer" class="content-section">
+                    <h3>5. Disclaimer</h3>
+                    <p>Our services are provided "AS IS" without any guarantees of availability, accuracy, or error-free performance.</p>
+                </div>
+
+                <div id="limitation" class="content-section">
+                    <h3>6. Limitation of Liability</h3>
+                    <p>We are not liable for any indirect, incidental, or consequential damages resulting from the use of our services.</p>
+                </div>
+
+                <div id="indemnification" class="content-section">
+                    <h3>7. Indemnification</h3>
+                    <p>You agree to indemnify and hold us harmless from any claims, damages, or losses arising from your use of our services.</p>
+                </div>
+
+                <div id="termination" class="content-section">
+                    <h3>8. Termination</h3>
+                    <p>We reserve the right to suspend or terminate your account if you violate these Terms.</p>
+                </div>
+
+                <div id="governing-law" class="content-section">
+                    <h3>9. Governing Law</h3>
+                    <p>These Terms are governed by the laws of <strong>[Your Country]</strong>, without regard to conflicts of law.</p>
+                </div>
+
+                <div id="changes" class="content-section">
+                    <h3>10. Changes to Terms</h3>
+                    <p>We may update these Terms periodically. Continued use of our services after changes means you accept the updated Terms.</p>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="tos-contact mt-5">
+                <div class="contact-box">
+                    <div class="contact-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h4>Have Questions?</h4>
+                        <p>If you have any questions about our Terms, please reach out to us.</p>
+                        <a href="{{ url('/#contact') }}" class="contact-link">Contact Support</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-
-        <!-- Content -->
-        <div class="tos-content">
-          <!-- Agreement Section -->
-          <div id="agreement" class="content-section">
-            <h3>1. Agreement to Terms</h3>
-            <p>By accessing our website and services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing our services.</p>
-            <div class="info-box">
-              <i class="bi bi-info-circle"></i>
-              <p>These terms apply to all users, visitors, and others who access or use our services.</p>
-            </div>
-          </div>
-
-          <!-- Intellectual Property -->
-          <div id="intellectual-property" class="content-section">
-            <h3>2. Intellectual Property Rights</h3>
-            <p>Our service and its original content, features, and functionality are owned by us and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.</p>
-            <ul class="list-items">
-              <li>All content is our exclusive property</li>
-              <li>You may not copy or modify the content</li>
-              <li>Our trademarks may not be used without permission</li>
-              <li>Content is for personal, non-commercial use only</li>
-            </ul>
-          </div>
-
-          <!-- User Accounts -->
-          <div id="user-accounts" class="content-section">
-            <h3>3. User Accounts</h3>
-            <p>When you create an account with us, you must provide accurate, complete, and current information. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account.</p>
-            <div class="alert-box">
-              <i class="bi bi-exclamation-triangle"></i>
-              <div class="alert-content">
-                <h5>Important Notice</h5>
-                <p>You are responsible for safeguarding the password and for all activities that occur under your account.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Prohibited Activities -->
-          <div id="prohibited" class="content-section">
-            <h3>4. Prohibited Activities</h3>
-            <p>You may not access or use the Service for any purpose other than that for which we make it available.</p>
-            <div class="prohibited-list">
-              <div class="prohibited-item">
-                <i class="bi bi-x-circle"></i>
-                <span>Systematic retrieval of data or content</span>
-              </div>
-              <div class="prohibited-item">
-                <i class="bi bi-x-circle"></i>
-                <span>Publishing malicious content</span>
-              </div>
-              <div class="prohibited-item">
-                <i class="bi bi-x-circle"></i>
-                <span>Engaging in unauthorized framing</span>
-              </div>
-              <div class="prohibited-item">
-                <i class="bi bi-x-circle"></i>
-                <span>Attempting to gain unauthorized access</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Disclaimers -->
-          <div id="disclaimer" class="content-section">
-            <h3>5. Disclaimers</h3>
-            <p>Your use of our service is at your sole risk. The service is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, whether express or implied.</p>
-            <div class="disclaimer-box">
-              <p>We do not guarantee that:</p>
-              <ul>
-                <li>The service will meet your requirements</li>
-                <li>The service will be uninterrupted or error-free</li>
-                <li>Results from using the service will be accurate</li>
-                <li>Any errors will be corrected</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Limitation of Liability -->
-          <div id="limitation" class="content-section">
-            <h3>6. Limitation of Liability</h3>
-            <p>In no event shall we be liable for any indirect, punitive, incidental, special, consequential, or exemplary damages arising out of or in connection with your use of the service.</p>
-          </div>
-
-          <!-- Indemnification -->
-          <div id="indemnification" class="content-section">
-            <h3>7. Indemnification</h3>
-            <p>You agree to defend, indemnify, and hold us harmless from and against any claims, liabilities, damages, losses, and expenses arising out of your use of the service.</p>
-          </div>
-
-          <!-- Termination -->
-          <div id="termination" class="content-section">
-            <h3>8. Termination</h3>
-            <p>We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
-          </div>
-
-          <!-- Governing Law -->
-          <div id="governing-law" class="content-section">
-            <h3>9. Governing Law</h3>
-            <p>These Terms shall be governed by and construed in accordance with the laws of [Your Country], without regard to its conflict of law provisions.</p>
-          </div>
-
-          <!-- Changes -->
-          <div id="changes" class="content-section">
-            <h3>10. Changes to Terms</h3>
-            <p>We reserve the right to modify or replace these Terms at any time. We will provide notice of any changes by posting the new Terms on this page.</p>
-            <div class="notice-box">
-              <i class="bi bi-bell"></i>
-              <p>By continuing to access or use our service after those revisions become effective, you agree to be bound by the revised terms.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="tos-contact">
-          <div class="contact-box">
-            <div class="contact-icon">
-              <i class="bi bi-envelope"></i>
-            </div>
-            <div class="contact-content">
-              <h4>Questions About Terms?</h4>
-              <p>If you have any questions about these Terms, please contact us.</p>
-              <a href="#" class="contact-link">Contact Support</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Terms Of Service Section -->
+    </section>
+    <!-- /Terms Of Service Section -->
 
 </main>
 

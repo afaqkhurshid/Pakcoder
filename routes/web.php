@@ -18,4 +18,8 @@ Route::get('/page-not-found', [ErrorController::class, 'index'])->name('page-not
 Route::get('/service-details', [ServiceDetailsrController::class, 'index'])->name('service-details');
 Route::get('/terms-conditions', [TermsConditionController::class, 'index'])->name('terms-conditions');
 
+// Static pages
+Route::get('/privacy-policy', function () {return view('privacy');});
+Route::get('/terms-conditions', function () {return view('terms');});
+
 Route::post('/forms/contact', [ContactController::class, 'store'])->name('contact.submit');

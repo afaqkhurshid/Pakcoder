@@ -36,7 +36,7 @@ class ContactController extends Controller
         ]);
 
         $emailData = $request->only(['name', 'email', 'phone', 'service', 'message']);
-        Mail::to(config('mail.from.address'))->send(new ContactFormSubmitted($emailData));
+        Mail::to('thepakcoder@gmail.com')->send(new ContactFormSubmitted($emailData));
 
         // Here you can add email notification if needed
         // Mail::to(config('mail.from.address'))->send(new ContactFormSubmitted($contact));

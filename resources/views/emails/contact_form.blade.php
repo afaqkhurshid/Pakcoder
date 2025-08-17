@@ -11,6 +11,6 @@
     <p><strong>Phone:</strong> {{ $data['phone'] ?? 'N/A' }}</p>
     <p><strong>Service:</strong> {{ $data['service'] ?? 'Not specified' }}</p>
     <p><strong>Message:</strong></p>
-    <p>{{ $data['message'] }}</p>
+    <p>{{ $data['message'] }}</p>   
 </body>
 </html>
