@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ServiceDetailsrController;
 use App\Http\Controllers\TermsConditionController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
@@ -23,3 +24,13 @@ Route::get('/privacy-policy', function () {return view('privacy');});
 Route::get('/terms-conditions', function () {return view('terms');});
 
 Route::post('/forms/contact', [ContactController::class, 'store'])->name('contact.submit');
+
+Route::get('/run-migrations', function () {
+        Artisan::call('migrate', ['--force' => true]);
+        return 'Migration completed: ' . Artisan::output();
+});
+
+Route::get('/run-optimize', function () {
+        Artisan::call('optimize');
+        return 'Optimization completed: ' . Artisan::output();
+});
