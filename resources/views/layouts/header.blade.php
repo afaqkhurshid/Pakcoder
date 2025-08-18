@@ -5,12 +5,9 @@
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:thepakcoder@gmail.com">thepakcoder@gmail.com</a></i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>+92 313 4672846</span></i>
       </div>
-      {{-- <div class="social-links d-none d-md-flex align-items-center"> --}}
-        {{-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> --}}
-      {{-- </div> --}}
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://wa.me/923134672846" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </div>
     </div>
   </div><!-- End Top Bar -->
   <div class="branding d-flex align-items-center">
@@ -36,7 +33,7 @@
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="https://wa.me/923134672846" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
                   <li><a href="#">Deep Dropdown 3</a></li>
                   <li><a href="#">Deep Dropdown 4</a></li>
@@ -361,7 +358,7 @@
             </div><!-- End Desktop Megamenu -->
           </li> --}}
           <!-- End Megamenu 2 -->
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>

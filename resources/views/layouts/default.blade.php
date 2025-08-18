@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -55,10 +56,8 @@
 
     @include('layouts.footer')
 
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="https://wa.me/923134672846" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" target="_blank" title="WhatsApp"> <i class="bi bi-whatsapp"></i></a>
 
-    <!-- Preloader -->
     <div id="preloader">
         <div></div>
         <div></div>

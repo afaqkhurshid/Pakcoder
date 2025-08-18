@@ -16,6 +16,7 @@ use App\Http\Controllers\ServiceDetailsrController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/page-not-found', [ErrorController::class, 'index'])->name('page-not-found');
 Route::get('/service-details', [ServiceDetailsrController::class, 'index'])->name('service-details');
 Route::get('/terms-conditions', [TermsConditionController::class, 'index'])->name('terms-conditions');

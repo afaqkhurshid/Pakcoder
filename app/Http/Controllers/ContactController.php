@@ -46,4 +46,9 @@ class ContactController extends Controller
             'message' => 'Thank you for your message! We will contact you soon.'
         ]);
     }
+
+    public function index()
+    {
+        return view('contact');
+    }
 }
