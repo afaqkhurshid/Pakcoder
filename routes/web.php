@@ -23,15 +23,10 @@ Route::get('/terms-conditions', [TermsConditionController::class, 'index'])->nam
 // Static pages
 Route::get('/privacy-policy', function () {return view('privacy');});
 Route::get('/terms-conditions', function () {return view('terms');});
-
 Route::post('/forms/contact', [ContactController::class, 'store'])->name('contact.submit');
-
 Route::get('/run-migrations', function () {Artisan::call('migrate', ['--force' => true]);return 'Migration completed: ' . Artisan::output();});
-
 Route::get('/run-optimize', function () {Artisan::call('optimize');return 'Optimization completed: ' . Artisan::output();});
-
 Route::get('/clear-cache', function() {Artisan::call('cache:clear');return 'Application cache cleared!';});
-
 Route::get('/route-clear', function() {Artisan::call('route:clear');return 'Route cache cleared!';});
 
 // Admin Routes
