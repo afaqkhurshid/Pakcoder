@@ -30,6 +30,9 @@
   <!-- Main CSS -->
   <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
 
+  <!-- CKEditor CDN -->
+  <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+
   <!-- =======================================================
   * Template Name: Passion
   * Template URL: https://bootstrapmade.com/passion-bootstrap-template/
