@@ -52,7 +52,7 @@
                                 <div class="mb-4">
                                     <label for="description" class="form-label">Project Description*</label>
                                     <textarea class="form-control @error('description') is-invalid @enderror" 
-                                            id="description" name="description" rows="5" required>{{ old('description') }}</textarea>
+                                            id="descriptions" name="description" rows="5" required>{{ old('description') }}</textarea>
                                     @error('description')
                                         <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror
@@ -61,10 +61,9 @@
                                 <!-- Technologies and Stacks in Grid -->
                                 <div class="row mb-4">
                                     <div class="col-md-6 mb-3 mb-md-0">
-                                        <label for="technologies" class="form-label">Technology*</label>
+                                        <label for="technologies" class="form-label ">Technology*</label>
                                         <select class="form-select @error('technologies') is-invalid @enderror" 
-                                                id="technologies" name="technologies" required>
-                                            <option value="">Select a Technology</option>
+                                                id="technologies" name="technologies[]" multiple required>
                                             @foreach($technologies as $tech)
                                                 <option value="{{ $tech->id }}" {{ old('technologies') == $tech->id ? 'selected' : '' }}>
                                                     {{ $tech->name }}
@@ -79,8 +78,7 @@
                                     <div class="col-md-6">
                                         <label for="stacks" class="form-label">Project Stack*</label>
                                         <select class="form-select @error('stacks') is-invalid @enderror" 
-                                                id="stacks" name="stacks[]" required>
-                                            <option value="">Select a Stack</option>
+                                                id="stacks" name="stacks[]" multiple required>
                                             @foreach($stacks as $stack)
                                                 <option value="{{ $stack->id }}" {{ old('stacks') == $stack->id ? 'selected' : '' }}>
                                                     {{ $stack->name }}
@@ -208,44 +206,14 @@
         </div>
     </section>
 </div>
-@section('scripts')
 <script>
-    // Initialize CKEditor on all textareas with class 'ckeditor'
-    document.addEventListener('DOMContentLoaded', function() {
-        CKEDITOR.replace('description', {
-            toolbar: [
-                { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline', 'Strike'] },
-                { name: 'paragraph', items: ['NumberedList', 'BulletedList'] },
-                { name: 'links', items: ['Link', 'Unlink'] },
-                { name: 'tools', items: ['Maximize'] },
-                { name: 'document', items: ['Source'] }
-            ],
-            removeButtons: 'Subscript,Superscript,Image,Table,SpecialChar',
-            height: 200
-        });
-        
-        CKEDITOR.replace('challenges', {
-            toolbar: [
-                { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline'] },
-                { name: 'paragraph', items: ['NumberedList', 'BulletedList'] },
-                { name: 'links', items: ['Link', 'Unlink'] },
-                { name: 'tools', items: ['Maximize'] }
-            ],
-            removeButtons: 'Subscript,Superscript,Image,Table,SpecialChar',
-            height: 150
-        });
-        
-        CKEDITOR.replace('solutions', {
-            toolbar: [
-                { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline'] },
-                { name: 'paragraph', items: ['NumberedList', 'BulletedList'] },
-                { name: 'links', items: ['Link', 'Unlink'] },
-                { name: 'tools', items: ['Maximize'] }
-            ],
-            removeButtons: 'Subscript,Superscript,Image,Table,SpecialChar',
-            height: 150
-        });
+    $(document).ready(function() {
+        $('#technologies').select2();
+        $('#stacks').select2();
     });
+    ClassicEditor.create(document.querySelector('#descriptions'))
+        .catch(error => {
+            console.error(error);
+        });
 </script>
-@endsection
 @endsection
