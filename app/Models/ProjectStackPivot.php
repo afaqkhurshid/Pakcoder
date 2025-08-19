@@ -12,17 +12,18 @@ class ProjectStackPivot extends Model
     protected $table = 'project_stack';
     
     protected $fillable = [
+        'id',
         'project_id',
         'stack_id'
     ];
 
-    public function project()
-    {
-        return $this->belongsTo(Project::class);
-    }
+    // public function project()
+    // {
+    //     return $this->belongsTo(Project::class, 'id', 'project_id');
+    // }
 
-    public function stack()
-    {
-        return $this->belongsTo(ProjectStack::class, 'stack_id');
-    }
+    // public function stack()
+    // {
+    //     return $this->belongsTo(ProjectStack::class, 'project_id', 'id');
+    // }
 }

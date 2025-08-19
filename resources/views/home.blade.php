@@ -889,7 +889,7 @@
                   <h4>Africa Mobility Solutions (ME)</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/africa-mobility-solutions.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://africa-mobility-solutions-me.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
+                  <a href="{{ route('portfolio', ['id' => 1]) }}" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>

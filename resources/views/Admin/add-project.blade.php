@@ -5,7 +5,7 @@
 @section('content')
 <div class="page-wrapper">
     <!-- Page title section -->
-    <div class="page-title dark-background" style="background-image: url({{ asset('assets/img/bg/bg-14.webp') }});">
+    <div class="page-title dark-background">
         <div class="container position-relative">
             <h1>Add New Project</h1>
             <p>Create a new project entry for your portfolio</p>
@@ -41,18 +41,10 @@
                                     @enderror
                                 </div>
                                 
-                                {{-- <div class="mb-4">
-                                    <label for="description" class="form-label">Project Description*</label>
-                                    <textarea class="form-control @error('description') is-invalid @enderror" 
-                                              id="description" name="description" rows="5" required>{{ old('description') }}</textarea>
-                                    @error('description')
-                                        <div class="invalid-feedback">{{ $message }}</div>
-                                    @enderror
-                                </div> --}}
                                 <div class="mb-4">
                                     <label for="description" class="form-label">Project Description*</label>
                                     <textarea class="form-control @error('description') is-invalid @enderror" 
-                                            id="descriptions" name="description" rows="5" required>{{ old('description') }}</textarea>
+                                            id="descriptions" name="description" rows="5">{{ old('description') }}</textarea>
                                     @error('description')
                                         <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror
@@ -95,7 +87,7 @@
                                 <div class="row mb-4">
                                     <div class="col-md-3 mb-3 mb-md-0">
                                         <label for="active_users" class="form-label">Active Users</label>
-                                        <input type="number" class="form-control @error('active_users') is-invalid @enderror" 
+                                        <input type="number" min="0" class="form-control @error('active_users') is-invalid @enderror" 
                                                id="active_users" name="active_users" value="{{ old('active_users') }}">
                                         @error('active_users')
                                             <div class="invalid-feedback">{{ $message }}</div>
@@ -113,7 +105,7 @@
                                     
                                     <div class="col-md-3 mb-3 mb-md-0">
                                         <label for="months_development" class="form-label">Development Months</label>
-                                        <input type="number" class="form-control @error('months_development') is-invalid @enderror" 
+                                        <input type="number" min="0" class="form-control @error('months_development') is-invalid @enderror" 
                                                id="months_development" name="months_development" value="{{ old('months_development') }}">
                                         @error('months_development')
                                             <div class="invalid-feedback">{{ $message }}</div>
@@ -211,9 +203,38 @@
         $('#technologies').select2();
         $('#stacks').select2();
     });
-    ClassicEditor.create(document.querySelector('#descriptions'))
-        .catch(error => {
-            console.error(error);
+    // ClassicEditor.create(document.querySelector('#descriptions'))
+    //     .catch(error => {
+    //         console.error(error);
+    //     });
+    // ClassicEditor.create(document.querySelector('#challenges'))
+    // .catch(error => {
+    //         console.error(error);
+    //     });
+    // ClassicEditor.create(document.querySelector('#solutions'))
+    // .catch(error => {
+    //         console.error(error);
+    //     });
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize only if elements exist
+        const editors = [
+            { id: 'descriptions', instance: null },
+            { id: 'challenges', instance: null },
+            { id: 'solutions', instance: null }
+        ];
+        
+        editors.forEach(editor => {
+            const element = document.querySelector(`#${editor.id}`);
+            if (element) {
+                ClassicEditor.create(element)
+                    .then(newEditor => {
+                        editor.instance = newEditor;
+                    })
+                    .catch(error => {
+                        console.error(`Failed to initialize ${editor.id}:`, error);
+                    });
+            }
         });
+    });
 </script>
 @endsection

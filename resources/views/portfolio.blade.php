@@ -28,43 +28,48 @@
         <div class="project-header">
           <div class="row">
             <div class="col-lg-7">
-              <h1 class="project-title">Interactive Mobile Banking Platform</h1>
+              <h1 class="project-title">{{ $project->name }}</h1>
               <div class="project-meta">
                 <div class="meta-item">
                   <i class="bi bi-calendar3"></i>
-                  <span>June 2025</span>
+                  {{-- <span>{{ $project->start_date }}</span> --}}
+                  <span>{{ \Carbon\Carbon::parse($project->start_date)->format('F jS, Y') }}</span>
                 </div>
                 <div class="meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  {{-- <span>{{ $project->end_date }}</span> --}}
+                  <span>{{ \Carbon\Carbon::parse($project->end_date)->format('F jS, Y') }}</span>
+                </div>
+                {{-- <div class="meta-item">
                   <i class="bi bi-building"></i>
                   <span>FinTech Innovations Inc.</span>
-                </div>
+                </div> --}}
+                
                 <div class="meta-item">
                   <i class="bi bi-link-45deg"></i>
-                  <a href="#" target="_blank">bankingapp.example.com</a>
+                  <a href="{{ $project->website_url }}" target="_blank">{{ $project->website_url }}</a>
                 </div>
               </div>
               <div class="project-tags">
-                <span class="tag">Mobile App</span>
-                <span class="tag">UX Design</span>
-                <span class="tag">FinTech</span>
+                @foreach ($project->stacks as $stack)
+                    <span class="tag">{{ $stack->name }}</span>
+                  @endforeach
               </div>
             </div>
             <div class="col-lg-5 d-flex align-items-center justify-content-end">
               <div class="technologies">
                 <div class="tech-title">Technologies Used:</div>
                 <div class="tech-badges">
-                  <span>React Native</span>
-                  <span>Node.js</span>
-                  <span>MongoDB</span>
-                  <span>AWS</span>
-                  <span>Redux</span>
+                  @foreach ($project->technologies as $technology)
+                    <span>{{ $technology->name }}</span>
+                  @endforeach
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="media-showcase">
+        {{-- <div class="media-showcase">
           <div class="portfolio-details-slider swiper init-swiper swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden">
             <script type="application/json" class="swiper-config">
               {
@@ -99,34 +104,34 @@
             <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-bullets-dynamic" style="width: 190px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active-prev" style="left: 0px;" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" style="left: 0px;" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 0px;" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
           </div>
-        </div>
+        </div> --}}
 
         <div class="project-content">
           <div class="row gy-4">
             <div class="col-lg-7">
               <div class="description-box">
                 <h3>Project Overview</h3>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, justo non commodo pellentesque, eros massa convallis ipsum, vel ultrices mauris arcu nec magna. Vestibulum ante ipsum primis in faucibus orci luctus et.</p>
-                <p>Nulla porttitor accumsan tincidunt. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a nulla porttitor accumsan.</p>
+                <p class="lead">{!! $project->description !!}</p>
+                {{-- <p>Nulla porttitor accumsan tincidunt. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a nulla porttitor accumsan.</p> --}}
               </div>
             </div>
 
             <div class="col-lg-5">
               <div class="project-stats">
                 <div class="stat-item">
-                  <div class="stat-number">14k+</div>
+                  <div class="stat-number">{{ $project->active_users }}</div>
                   <div class="stat-label">Active Users</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">98%</div>
+                  <div class="stat-number">{{ $project->client_satisfaction }}%</div>
                   <div class="stat-label">Client Satisfaction</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">6</div>
+                  <div class="stat-number">{{ $project->months_development }}</div>
                   <div class="stat-label">Months Development</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">4.8</div>
+                  <div class="stat-number">{{ $project->app_store_rating }}</div>
                   <div class="stat-label">App Store Rating</div>
                 </div>
               </div>
@@ -140,7 +145,7 @@
                   <i class="bi bi-lightbulb"></i>
                 </div>
                 <h4>The Challenge</h4>
-                <p>Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+                <p>{!! $project->challenges !!}</p>
               </div>
             </div>
 
@@ -150,34 +155,22 @@
                   <i class="bi bi-trophy"></i>
                 </div>
                 <h4>The Solution</h4>
-                <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec sollicitudin molestie malesuada. Praesent sapien massa.</p>
+                <p>{!! $project->solutions !!}</p>
               </div>
             </div>
           </div>
 
+          {{-- @dd($project->gallery); --}}
           <div class="project-gallery">
             <h3>Project Gallery</h3>
             <div class="row g-3">
-              <div class="col-6 col-md-3">
-                <div class="gallery-item">
-                  <img src="assets/img/portfolio/portfolio-9.webp" alt="Project Image" class="img-fluid glightbox">
+              @foreach($project->gallery as $image)
+                <div class="col-6 col-md-3">
+                    <div class="gallery-item">
+                        <img src="{{ asset('storage/' . $image->image_path) }}" alt="Project Image" class="img-fluid glightbox">
+                    </div>
                 </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="gallery-item">
-                  <img src="assets/img/portfolio/portfolio-10.webp" alt="Project Image" class="img-fluid glightbox">
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="gallery-item">
-                  <img src="assets/img/portfolio/portfolio-4.webp" alt="Project Image" class="img-fluid glightbox">
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="gallery-item">
-                  <img src="assets/img/portfolio/portfolio-6.webp" alt="Project Image" class="img-fluid glightbox">
-                </div>
-              </div>
+              @endforeach
             </div>
           </div>
 
