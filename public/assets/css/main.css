@@ -5414,9 +5414,6 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.gap-7px{
+  gap: 7px !important;
 }
