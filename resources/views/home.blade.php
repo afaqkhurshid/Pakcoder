@@ -72,17 +72,17 @@
         <div class="col-lg-6">
           <div class="hero-content">
             <span class="hero-badge">IT SOLUTIONS EXPERTS</span>
-            <h1>Fast, Scalable & Custom Web Solutions That Deliver Results</h1>
+            <h1>Fast, Scalable & Custom Web Solutions</h1>
             <p>PakCoder builds fast, secure, and scalable products in Laravel, PHP, Mern, Mean, WordPress, and Shopify—plus UI/UX and digital marketing to grow them.</p>
-            <ul class="hero-trust list-inline mb-3">
+            {{-- <ul class="hero-trust list-inline mb-3">
               <li class="list-inline-item">20+ happy clients</li>
               <li class="list-inline-item">Logistics & eCommerce specialists</li>
               <li class="list-inline-item">Dropshipping & Shopify expertise</li>
               <li class="list-inline-item">End-to-end: Strategy → Design → Build → Growth</li>
-            </ul>
+            </ul> --}}
             <div class="hero-actions mb-2">
-              <a href="#portfolio" class="btn btn-success">View Our Work</a>
-              <a href="{{ route('contact') }}" class="btn btn-outline-light">Request a Quote</a>
+              <a href="https://wa.me/923134672846" class="btn btn-success">Whatsapp</a>
+              <a href="#portfolio" class="btn btn-outline-light">Find Our Work</a>
             </div>
           </div>
         </div>
@@ -149,10 +149,10 @@
       <div class="row align-items-center">
         <div class="col-lg-6">
           <div class="content">
-            <h2>Turning Your Ideas Into Reality</h2>
-            <p class="lead">For the past 6+ years, we’ve been delivering high-quality digital solutions — from custom web applications to full-scale business platforms — ensuring client satisfaction is always our top priority.</p>
-            <p>As a complete solution agency specializing in Laravel, PHP, MERN Stack, and modern front-end technologies, we’ve successfully completed 150+ projects, worked with over 40 happy clients, and maintained a 95% success rate. Our team is skilled, dedicated, and always on time — because your deadlines matter to us.</p>
-            <p>Share your idea with us, and we’ll transform it into a fully functional reality that not only works but helps your business grow. Let’s make it happen together.</p>
+            <h2>Transforming Ideas Into Powerful Digital Experiences</h2>
+            <p class="lead">With 6+ years of expertise, we specialize in creating scalable web solutions tailored to your business. Having delivered 150+ projects for 40+ clients, our team ensures reliable, on-time results with a proven 95% success rate.</p>
+            <p>As a complete solution agency specializing in Laravel, PHP, MERN Stack, and modern front-end technologies, and maintained a 95% success rate. Our team is skilled, dedicated, and always on time — because your deadlines matter to us.</p>
+            {{-- <p>Share your idea with us, and we’ll transform it into a fully functional reality that not only works but helps your business grow. Let’s make it happen together.</p> --}}
 
             <div class="stats-container">
               <div class="row">
@@ -327,7 +327,7 @@
     <!-- Section Title -->
     <div class="container section-title">
       <h2>Our Key Services</h2>
-      <p>End-to-End IT Solutions & Digital Marketing Campaigns That Deliver Results</p>
+      <p>Building Brands and Driving Conversions for Lasting Growth</p>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -338,10 +338,7 @@
             <span class="subtitle">Full-Service IT & Marketing Solutions</span>
             <h2>From Clicks to Conversions — We Build & Market for Growth</h2>
             <p data-aos-duration="800">
-              We don’t just run ads — we build complete systems to turn strangers into customers.
-              From **high-performance websites & apps** to **targeted marketing campaigns**,
-              our team covers everything: Facebook, Instagram, WhatsApp, YouTube, Google Ads, Laravel, Symfony, MERN, React, Node.js, Tailwind, and more.
-              Our expert developers and marketers work together to ensure your campaigns bring real sales, not just traffic.
+             We don’t just run ads. We build complete systems to turn strangers into customers. From high-performance websites and apps to targeted marketing campaigns, our team covers everything: Facebook, Instagram, WhatsApp, YouTube, Google Ads, Laravel, Symfony, MERN, React, Node.js, Tailwind, and more. Our expert developers and marketers work together to ensure your campaigns bring real sales, not just traffic.
             </p>
             <div class="mt-4" data-aos-duration="1100">
               <a href="{{ route('contact') }}" class="btn-consultation">
@@ -884,11 +881,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/africa-mobility-solutions.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/africa-mobility-solutions.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Africa Mobility Solutions (ME)</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="/img/portfolio/africa-mobility-solutions.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/africa-mobility-solutions.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://africa-mobility-solutions-me.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -896,11 +893,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/h33.png" class="img-fluid" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/h3Account.jpg" class="img-fluid" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>H3 Accountants</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="/img/portfolio/h33.png" class="glightbox preview-link">
+                  <a href="/img/portfolio/h3Account.jpg" class="glightbox preview-link">
                     <i class="bi bi-zoom-in"></i>
                   </a>
                   <a href="https://h3accountants.com.au/" class="details-link">
@@ -912,11 +909,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/almarfa.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/almarfa.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Almarfa</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="/img/portfolio/almarfa.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/almarfa.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://almarfa.com.sa/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -924,11 +921,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/mile.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/mile.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>MileNow</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="/img/portfolio/mile.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/mile.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://www.milenow.com/en/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -938,7 +935,7 @@
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
                 <img src="img/portfolio/milenow.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
-                  <h4>MileNow (content hub)</h4>
+                  <h4>MileNow Wordpress</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="/img/portfolio/milenow.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://www.milenow.com/en/new-dropshipping-management/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
@@ -960,11 +957,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/rx.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/rx.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>RxOnTrack (Netlify demo)</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="/img/portfolio/rx.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/rx.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://rxontrack.netlify.app/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -996,11 +993,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/visio.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/viocell.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Visiocell</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="/img/portfolio/visio.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/viocell.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://visiocell.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1008,11 +1005,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/flasholr.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/flashholr.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>FlashOLR</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="/img/portfolio/flasholr.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/flashholr.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://flasholr.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1032,11 +1029,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-shopify">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/mughaliaz.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/mughaliazw.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Mughaliaz</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="/img/portfolio/mughaliaz.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/mughaliazw.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://mughaliaz.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1044,11 +1041,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-shopify">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/sunnybloom.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/sunnybloom.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Sunny Bloom</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="/img/portfolio/sunnybloom.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/sunnybloom.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://sunnybloom.co.uk/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1457,7 +1454,7 @@
 
           <div class="text-center mt-5 pt-4">
             <h4 class="mb-4">Still have questions?</h4>
-            <a href="{{ route('contact') }}" class="btn btn-lg px-4" style="background-color:#12a16b; border:none; color:white">
+            <a href="https://wa.me/923134672846" class="btn btn-lg px-4" style="background-color:#12a16b; border:none; color:white">
               <i class="bi bi-chat-left-text me-2"></i> Get Personalized Answers
             </a>
           </div>
