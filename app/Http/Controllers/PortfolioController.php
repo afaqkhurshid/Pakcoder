@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class PortfolioController extends Controller
 {
-    public function index ($id = null)
+    public function index ($id)
     {
         // return view('portfolio');
         try {

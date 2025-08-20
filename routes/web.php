@@ -31,5 +31,7 @@ Route::get('/clear-cache', function() {Artisan::call('cache:clear');return 'Appl
 Route::get('/route-clear', function() {Artisan::call('route:clear');return 'Route cache cleared!';});
 
 // Admin Routes
-Route::get('/projects/create', [ProjectController::class, 'create'])->name('projects.create');
-Route::post('/projects', [ProjectController::class, 'store'])->name('projects.store');
+Route::prefix('projects')->group(function () {
+    Route::get('/create', [ProjectController::class, 'create'])->name('projects.create');
+    Route::post('/store', [ProjectController::class, 'store'])->name('projects.store');
+});
