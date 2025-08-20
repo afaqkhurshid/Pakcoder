@@ -15,7 +15,7 @@ use App\Http\Controllers\ServiceDetailsrController;
 // });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
+Route::get('/portfolio/{id?}', [PortfolioController::class, 'index'])->name('portfolio');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/page-not-found', [ErrorController::class, 'index'])->name('page-not-found');
 Route::get('/service-details', [ServiceDetailsrController::class, 'index'])->name('service-details');
@@ -31,5 +31,7 @@ Route::get('/clear-cache', function() {Artisan::call('cache:clear');return 'Appl
 Route::get('/route-clear', function() {Artisan::call('route:clear');return 'Route cache cleared!';});
 
 // Admin Routes
-Route::get('/projects/create', [ProjectController::class, 'create'])->name('projects.create');
-Route::post('/projects', [ProjectController::class, 'store'])->name('projects.store');
+Route::prefix('projects')->group(function () {
+    Route::get('/create', [ProjectController::class, 'create'])->name('projects.create');
+    Route::post('/store', [ProjectController::class, 'store'])->name('projects.store');
+});

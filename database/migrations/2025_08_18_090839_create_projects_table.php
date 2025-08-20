@@ -11,7 +11,8 @@ return new class extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->date('date');
+            $table->date('start_date');
+            $table->date('end_date');
             $table->string('website_url')->nullable();
             $table->text('description');
             $table->integer('active_users')->nullable();

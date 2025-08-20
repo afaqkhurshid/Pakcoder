@@ -9,10 +9,11 @@ class ProjectGallery extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['id', 'project_id', 'image_url'];
+    protected $table = 'project_gallery';
+    protected $fillable = ['id', 'project_id', 'image_path'];
 
     public function project()
     {
-        return $this->belongsTo(Project::class);
+        return $this->belongsTo(Project::class, 'project_id', 'id');
     }
 }

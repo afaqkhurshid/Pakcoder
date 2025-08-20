@@ -12,17 +12,18 @@ class ProjectTechnologyPivot extends Model
     protected $table = 'project_technology';
     
     protected $fillable = [
+        'id',
         'project_id',
         'technology_id'
     ];
 
-    public function project()
-    {
-        return $this->belongsTo(Project::class);
-    }
+    // public function projects()
+    // {
+    //     return $this->belongsTo(Project::class, 'id', 'project_id');
+    // }
 
-    public function technology()
-    {
-        return $this->belongsTo(ProjectTechnology::class, 'technology_id');
-    }
+    // public function technology()
+    // {
+    //     return $this->belongsTo(ProjectTechnology::class, 'project_id', 'id');
+    // }
 }
