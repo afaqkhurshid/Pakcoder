@@ -80,8 +80,8 @@
               <li class="list-inline-item">Dropshipping & Shopify expertise</li>
               <li class="list-inline-item">End-to-end: Strategy → Design → Build → Growth</li>
             </ul> --}}
-            <div class="hero-actions mb-2">
-              <a href="https://wa.me/923134672846" class="btn btn-success">Whatsapp</a>
+            <div class="hero-actions gap-7px mb-2">
+              <a href="https://wa.me/923114810055" class="btn btn-success"><i class="bi bi-whatsapp"></i></a>
               <a href="#portfolio" class="btn btn-outline-light">Find Our Work</a>
             </div>
           </div>
@@ -603,9 +603,9 @@
               <i class="bi bi-graph-up-arrow"></i>
             </div>
             <div class="service-content">
-              <h3><a href="#portfolio">Digital Marketing</a></h3>
+              <h3>Digital Marketing</h3>
               <p>We craft data-driven marketing campaigns that boost your brand visibility, attract the right audience, and drive measurable growth for your business.</p>
-              <a href="#portfolio" class="btn-cta">
+              <a href="https://wa.me/923134672846" class="btn-cta">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -620,9 +620,9 @@
               <i class="bi bi-shield-check"></i>
             </div>
             <div class="service-content">
-              <h3><a href="#portfolio">Security Solutions</a></h3>
+              <h3>Security Solutions</h3>
               <p>We implement robust security measures to protect your website, data, and users from cyber threats — ensuring peace of mind and uninterrupted operations.</p>
-              <a href="#portfolio" class="btn-cta">
+              <a href="https://wa.me/923134672846" class="btn-cta">
                 <span>Discover</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -637,9 +637,9 @@
               <i class="bi bi-cloud-upload"></i>
             </div>
             <div class="service-content">
-              <h3><a href="#portfolio">Cloud Services</a></h3>
-              <p>We offer scalable cloud hosting, storage, and deployment solutions — giving your business the flexibility, speed, and reliability it needs to grow.</p>
-              <a href="#portfolio" class="btn-cta">
+              <h3>Cloud Services</h3>
+              <p>We offer scalable cloud hosting (AWS, Azure, cPanel), storage, and deployment solutions — giving your business the flexibility, speed, and reliability it needs to grow.</p>
+              <a href="https://wa.me/923134672846" class="btn-cta">
                 <span>Get Quote</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -884,7 +884,7 @@
                 <img src="img/portfolio/africa-mobility-solutions.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Africa Mobility Solutions (ME)</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Laravel, Bootstrap, PHP</p>
                   <a href="/img/portfolio/africa-mobility-solutions.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://africa-mobility-solutions-me.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                   {{-- <a href="{{ route('portfolio', ['id' => 1]) }}" class="details-link"> <i class="bi bi-arrow-right-short"></i></a> --}}
@@ -894,26 +894,10 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/h3Account.jpg" class="img-fluid" alt="" style="height:250px; object-fit:cover;">
-                <div class="portfolio-info flex-grow-1">
-                  <h4>H3 Accountants</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="/img/portfolio/h3Account.jpg" class="glightbox preview-link">
-                    <i class="bi bi-zoom-in"></i>
-                  </a>
-                  <a href="https://h3accountants.com.au/" class="details-link">
-                    <i class="bi bi-arrow-right-short"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
-              <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
                 <img src="img/portfolio/almarfa.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Almarfa</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>PHP, Wordpress</p>
                   <a href="/img/portfolio/almarfa.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://almarfa.com.sa/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
@@ -925,7 +909,7 @@
                 <img src="img/portfolio/mile.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>MileNow</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Symfony, PHP, Tailwind</p>
                   <a href="/img/portfolio/mile.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://www.milenow.com/en/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
@@ -937,7 +921,7 @@
                 <img src="img/portfolio/milenow.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>MileNow Wordpress</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>PHP, Wordpress</p>
                   <a href="/img/portfolio/milenow.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://www.milenow.com/en/new-dropshipping-management/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
@@ -949,7 +933,7 @@
                 <img src="img/portfolio/xytech.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Xytech</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>PHP, Wordpress</p>
                   <a href="/img/portfolio/xytech.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://xytech.io/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
@@ -961,7 +945,7 @@
                 <img src="img/portfolio/rx.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>RxOnTrack (Netlify demo)</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>React, Node, Mern</p>
                   <a href="/img/portfolio/rx.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://rxontrack.netlify.app/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
@@ -973,7 +957,7 @@
                 <img src="img/portfolio/compareparkingprices.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Compare Parking Prices</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Laravel, Bootstrap, PHP, Vue.Js</p>
                   <a href="/img/portfolio/compareparkingprices.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://www.compareparkingprices.co.uk/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
@@ -985,7 +969,7 @@
                 <img src="img/portfolio/bellezabh.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Belleza BH</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Laravel, Bootstrap, PHP ,Stripe, Paypal</p>
                   <a href="/img/portfolio/bellezabh.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://bellezabh.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
@@ -997,7 +981,7 @@
                 <img src="img/portfolio/viocell.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Visiocell</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>PHP, Wordpress</p>
                   <a href="/img/portfolio/viocell.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://visiocell.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
@@ -1009,7 +993,7 @@
                 <img src="img/portfolio/flashholr.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>FlashOLR</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Laravel, Bootstrap, PHP</p>
                   <a href="/img/portfolio/flashholr.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://flasholr.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
@@ -1021,7 +1005,7 @@
                 <img src="img/portfolio/samarqand.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Samarqand Fabrics</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Shopify</p>
                   <a href="/img/portfolio/samarqand.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://samarqandfabrics.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
@@ -1033,9 +1017,25 @@
                 <img src="img/portfolio/mughaliazw.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Mughaliaz</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Shopify</p>
                   <a href="/img/portfolio/mughaliazw.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://mughaliaz.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
+              <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
+                <img src="img/portfolio/h3Account.jpg" class="img-fluid" alt="" style="height:250px; object-fit:cover;">
+                <div class="portfolio-info flex-grow-1">
+                  <h4>H3 Accountants</h4>
+                  <p>Php,Wordpress</p>
+                  <a href="/img/portfolio/h3Account.jpg" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  <a href="https://h3accountants.com.au/" class="details-link">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1045,7 +1045,7 @@
                 <img src="img/portfolio/sunnybloom.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Sunny Bloom</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Shopify</p>
                   <a href="/img/portfolio/sunnybloom.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://sunnybloom.co.uk/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>

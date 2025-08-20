@@ -7,8 +7,7 @@
 
         </a>
         <p>
-          We build modern, scalable, and secure web solutions that help businesses
-          grow online — from custom development to digital marketing, all under one roof.
+          We are your end-to-end digital partner, transforming ideas into powerful online assets. Our team specializes in building modern, secure, and scalable websites and applications that perform. Then, we amplify your reach with strategic digital marketing to drive growth and engagement. From initial concept to development and final promotion, we provide a seamless, integrated solution under one roof, ensuring your brand not only launches successfully but thrives in the competitive digital landscape. Let's build your future online.
         </p>
         <div class="social-links d-flex mt-4">
           {{-- <a href=""><i class="bi bi-twitter-x"></i></a>

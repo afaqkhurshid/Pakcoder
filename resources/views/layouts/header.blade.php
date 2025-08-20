@@ -359,6 +359,15 @@
           </li> --}}
           <!-- End Megamenu 2 -->
           <li><a href="{{ route('contact') }}">Contact</a></li>
+          {{-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{ app()->getLocale() == 'ar' ? 'العربية (Arabic)' : 'English' }}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item" href="{{ url('/en') }}">English</a></li>
+                <li><a class="dropdown-item" href="{{ url('/ar') }}">العربية (Arabic)</a></li>
+            </ul>
+          </li> --}}
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
