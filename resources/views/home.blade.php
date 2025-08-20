@@ -94,16 +94,16 @@
               @csrf
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control border-green" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                  <input type="email" name="email" class="form-control border-green" placeholder="Your Email" required>
                 </div>
               </div>
 
               <div class="row mt-3">
                 <div class="col-md-6 form-group">
-                  <select class="form-control select-drop-down" name="service" required>
+                  <select class="form-control select-drop-down border-green" name="service" required>
                     <option value="" disabled selected>What service do you need?</option>
                     <option value="web-development">Web Development (Laravel/PHP)</option>
                     <option value="wordpress">WordPress Development</option>
@@ -113,14 +113,14 @@
                   </select>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="number" name="phone" class="form-control" placeholder="Your Phone" required>
+                  <input type="number" name="phone" class="form-control border-green" placeholder="Your Phone" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+                <textarea class="form-control border-green" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
               </div>
               <div class="form-submit mt-3">
-                <button type="submit" class="btn btn-primary w-100">Get Free Consultation</button>
+                <button type="submit" class="btn btn-primary w-100">Reach Us</button>
               </div>
             </form>
           </div>
@@ -349,7 +349,7 @@
         </div>
         <div class="col-lg-6">
           <div class="services-image">
-            <img src="img/services/it-marketing-team.jpg" alt="IT & Marketing Solutions" class="rounded-4" style="width: 600px;">
+            <img src="img/services/it-marketing-team.jpg" alt="IT & Marketing Solutions" class="rounded-4" style="width:100%; height: auto;">
             <div class="shape-circle"></div>
             <div class="shape-accent"></div>
           </div>
@@ -845,7 +845,6 @@
             </div>
           </div>
 
-
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -1160,7 +1159,7 @@
               </div>
               <div class="team-content">
                 <h3>Awais Khizar</h3>
-                <span>CEO & Digital Marketing Expert</span>
+                <span>Digital Marketing Expert</span>
                 <p>Founder and leader of PakCoder, specializing in delivering complete digital marketing solutions that boost brand growth and online presence.</p>
               </div>
             </div>
@@ -1174,7 +1173,7 @@
               </div>
               <div class="team-content">
                 <h3>Afaq Khurshid</h3>
-                <span>CTO & Full-Stack Developer</span>
+                <span>Full-Stack Developer</span>
                 <p>Expert in Laravel, PHP, MERN & MEAN stacks, delivering scalable and high-performance applications for clients worldwide.</p>
               </div>
             </div><!-- End Team Card -->
@@ -1468,21 +1467,19 @@
 <script>
 
 $(document).ready(function() {
+
     $('.php-email-form').submit(function(e) {
         e.preventDefault();
         
         var form = $(this);
         var submitBtn = form.find('button[type="submit"]');
-        
-        // Check if submit button exists
+
         if(submitBtn.length === 0) {
             console.error('Submit button not found in the form');
             return;
         }
         
         var originalBtnText = submitBtn.html();
-        
-        // Show loading state
         submitBtn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...');
         
         $.ajax({
@@ -1539,6 +1536,7 @@ $(document).ready(function() {
             }
         });
     });
+
 });
 
 </script>
