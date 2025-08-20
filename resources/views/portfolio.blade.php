@@ -129,7 +129,7 @@
               @foreach($project->gallery as $image)
                 <div class="col-6 col-md-3">
                     <div class="gallery-item">
-                        <img src="{{ asset('storage/' . $image->image_path) }}" alt="Project Image" class="img-fluid glightbox">
+                        <img src="{{ asset($image->image_path) }}" alt="Project Image" class="img-fluid glightbox">
                     </div>
                 </div>
               @endforeach

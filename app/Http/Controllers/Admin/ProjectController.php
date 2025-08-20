@@ -24,7 +24,7 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         try {
-            
+            // dd($request);
             // Validate the request data
             $validated = $request->validate([
                 'title' => 'required|string|max:255',
@@ -47,7 +47,11 @@ class ProjectController extends Controller
             ]);
 
             // Handle thumbnail upload
-            $thumbnailPath = $request->file('thumbnail')->store('project-thumbnails', 'public');
+            // $thumbnailPath = $request->file('thumbnail')->store('project-thumbnails', 'public');
+            $thumbnailFile = $request->file('thumbnail');
+            $thumbnailName = time() . '_' . $thumbnailFile->getClientOriginalName();
+            $thumbnailPath = 'project-thumbnails/' . $thumbnailName;
+            $thumbnailFile->move(public_path('project-thumbnails'), $thumbnailName);
                 
             // Create the project
             $project = Project::create([
@@ -74,7 +78,10 @@ class ProjectController extends Controller
             // Handle additional images upload
             if ($request->hasFile('images')) {
                 foreach ($request->file('images') as $image) {
-                    $path = $image->store('project-gallery', 'public');
+                    // $path = $image->store('project-gallery', 'public');
+                    $imageName = time() . '_' . $image->getClientOriginalName();
+                    $path = 'project-gallery/' . $imageName;
+                    $image->move(public_path('project-gallery'), $imageName);
                     
                     ProjectGallery::create([
                         'project_id' => $project->id,
