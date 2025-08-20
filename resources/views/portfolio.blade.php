@@ -69,43 +69,6 @@
           </div>
         </div>
 
-        {{-- <div class="media-showcase">
-          <div class="portfolio-details-slider swiper init-swiper swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden">
-            <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 800,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "effect": "fade",
-                "fadeEffect": {
-                  "crossFade": true
-                },
-                "slidesPerView": 1,
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "clickable": true,
-                  "dynamicBullets": true
-                }
-              }
-            </script>
-            <div class="swiper-wrapper" id="swiper-wrapper-595f71b1bf967dd9" aria-live="off" style="transition-duration: 0ms; transition-delay: 0ms;">
-              <div class="swiper-slide swiper-slide-prev" style="width: 1296px; opacity: 0; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;" role="group" aria-label="1 / 3" data-swiper-slide-index="0">
-                <img src="assets/img/portfolio/portfolio-1.webp" alt="Portfolio Image" class="img-fluid">
-              </div>
-              <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" style="width: 1296px; opacity: 1; transform: translate3d(-1296px, 0px, 0px); transition-duration: 0ms;" role="group" aria-label="2 / 3" data-swiper-slide-index="1">
-                <img src="assets/img/portfolio/portfolio-2.webp" alt="Portfolio Image" class="img-fluid">
-              </div>
-              <div class="swiper-slide swiper-slide-next" style="width: 1296px; opacity: 0; transform: translate3d(-2592px, 0px, 0px); transition-duration: 0ms;" role="group" aria-label="3 / 3" data-swiper-slide-index="2">
-                <img src="assets/img/portfolio/portfolio-3.webp" alt="Portfolio Image" class="img-fluid">
-              </div>
-            </div>
-            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-bullets-dynamic" style="width: 190px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active-prev" style="left: 0px;" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" style="left: 0px;" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 0px;" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
-            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-          </div>
-        </div> --}}
-
         <div class="project-content">
           <div class="row gy-4">
             <div class="col-lg-7">
@@ -160,7 +123,6 @@
             </div>
           </div>
 
-          {{-- @dd($project->gallery); --}}
           <div class="project-gallery">
             <h3>Project Gallery</h3>
             <div class="row g-3">
