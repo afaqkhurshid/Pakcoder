@@ -5,9 +5,10 @@ use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ErrorController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\TermsConditionController;
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\ServiceDetailsrController;
 
 // Route::get('/', function () {
@@ -32,6 +33,7 @@ Route::get('/route-clear', function() {Artisan::call('route:clear');return 'Rout
 
 // Admin Routes
 Route::prefix('projects')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
     Route::get('/create', [ProjectController::class, 'create'])->name('projects.create');
     Route::post('/store', [ProjectController::class, 'store'])->name('projects.store');
 });
