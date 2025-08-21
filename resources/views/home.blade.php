@@ -1225,6 +1225,45 @@
       </div>
     </div>
 
+<!-- Video Section -->
+<section id="about-video" class="about-video section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h2 class="fw-bold mt-2">Website Development Company</h2>
+        <p>As a top web design and development company in Pakistan and the Middle East, we offer our clients 
+          the best solutions to help them increase their market share and accomplish their goals and objectives 
+          within the allotted time frame.
+        </p>
+        <p>
+          PakCoder is a leading web design firm, run by experts in their domains who are constantly working 
+          to give our esteemed clients innovative, custom-made solutions via creative problem-solving. 
+          Along with modern <strong>Shopify customization, Custom coding development and app development</strong>, 
+          we deliver cutting-edge websites and applications tailored to business needs. 
+          Our goal is to offer innovative, scalable, and future-ready digital solutions.
+        </p>
+        <h5 class="fw-bold">Our Objective</h5>
+        <p>
+          As a forward–thinking web design company in Pakistan and the Middle East, we support 
+          hand-coded websites, Shopify stores, and custom applications with complete client customization.
+        </p>
+      </div>
+
+      <!-- Right Side: Video -->
+      <div class="col-lg-6 text-center">
+        <div class="ratio ratio-16x9 rounded shadow">
+          <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/zg0zpvu00z.js" async type="module"></script><style>wistia-player[media-id='zg0zpvu00z']:not(:defined) { background: center / contain repeat url('https://fast.wistia.com/embed/medias/zg0zpvu00z/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="zg0zpvu00z" aspect="1.7777777777777777"></wistia-player>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /Video Section -->
+
+
+
+
   </section><!-- /Team Section -->
 
 

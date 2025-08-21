@@ -41,7 +41,7 @@
         <p>Near DHA Phase 1,</p>
         <p>Lahore, Pakistan</p>
         <p class="mt-4"><strong>Phone:</strong> <span>+92 313 4672846</span></p>
-        <p><strong>Email:</strong> <span>thepakcoder@gmail.com</span></p>
+        <p><strong>Email:</strong> <a href="mailto:thepakcoder@gmail.com"><span>thepakcoder@gmail.com</span></a></p>
       </div>
     </div>
   </div>

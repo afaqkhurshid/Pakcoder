@@ -2,8 +2,8 @@
   <div class="topbar d-flex align-items-center dark-background">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:thepakcoder@gmail.com">thepakcoder@gmail.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+92 313 4672846</span></i>
+        <i class="bi bi-envelope d-flex align-items-center" style="z-index: 9999;"><a href="mailto:thepakcoder@gmail.com">thepakcoder@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:+923134672846"><span>+92 313 4672846</span></a></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
         <a href="https://wa.me/923134672846" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
