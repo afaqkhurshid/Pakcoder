@@ -5417,3 +5417,7 @@ section,
 .gap-7px{
   gap: 7px !important;
 }
+
+.border-green{
+    border: 1px solid var(--accent-color) !important;
+}
