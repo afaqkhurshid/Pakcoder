@@ -56,15 +56,15 @@
       width: 100%;
     }
 
-     .about.section {
+    .about.section {
       padding-top: 0 !important;
     }
-      .team-image-size{
-      height: 400px !important;
+    .team-image-size {
+      height: 330px !important;
     }
   }
 
-  .team-image-size{
+  .team-image-size {
     width: 500px;
     height: 250px;
   }
@@ -360,7 +360,7 @@
         </div>
         <div class="col-lg-6">
           <div class="services-image">
-            <img src="img/services/it-marketing-team.jpg" alt="IT & Marketing Solutions" class="rounded-4" style="width:100%; height: auto;">
+            <img src="img/services/it-marketing-team.webp" alt="IT & Marketing Solutions" class="rounded-4" style="width:100%; height: auto;">
             <div class="shape-circle"></div>
             <div class="shape-accent"></div>
           </div>
@@ -1015,11 +1015,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/africa-mobility-solutions.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/africa-mobility-solutions.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Africa Mobility Solutions (ME)</h4>
                   <p>Laravel, Bootstrap, PHP</p>
-                  <a href="/img/portfolio/africa-mobility-solutions.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/africa-mobility-solutions.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://africa-mobility-solutions-me.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                   {{-- <a href="{{ route('portfolio', ['id' => 1]) }}" class="details-link"> <i class="bi bi-arrow-right-short"></i></a> --}}
                 </div>
@@ -1028,11 +1028,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/almarfa.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/almarfa.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Almarfa</h4>
                   <p>PHP, Wordpress</p>
-                  <a href="/img/portfolio/almarfa.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/almarfa.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://almarfa.com.sa/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1040,11 +1040,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/mile.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/mile.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>MileNow</h4>
                   <p>Symfony, PHP, Tailwind</p>
-                  <a href="/img/portfolio/mile.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/mile.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://www.milenow.com/en/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1052,11 +1052,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/milenow.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/milenow.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>MileNow Wordpress</h4>
                   <p>PHP, Wordpress</p>
-                  <a href="/img/portfolio/milenow.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/milenow.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://www.milenow.com/en/new-dropshipping-management/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1064,11 +1064,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/xytech.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/xytech.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Xytech</h4>
                   <p>PHP, Wordpress</p>
-                  <a href="/img/portfolio/xytech.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/xytech.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://xytech.io/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1076,11 +1076,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/rx.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/rx.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>RxOnTrack (Netlify demo)</h4>
                   <p>React, Node, Mern</p>
-                  <a href="/img/portfolio/rx.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/rx.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://rxontrack.netlify.app/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1088,23 +1088,23 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/compareparkingprices.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/compareparkingprices.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Compare Parking Prices</h4>
                   <p>Laravel, Bootstrap, PHP, Vue.Js</p>
-                  <a href="/img/portfolio/compareparkingprices.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://www.compareparkingprices.co.uk/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
+                  <a href="/img/portfolio/compareparkingprices.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.compareparkingprices.co.uk/" class="details-link"><i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel-symfony">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/bellezabh.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/bellezabh.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Belleza BH</h4>
                   <p>Laravel, Bootstrap, PHP ,Stripe, Paypal</p>
-                  <a href="/img/portfolio/bellezabh.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/bellezabh.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://bellezabh.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1112,11 +1112,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/viocell.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/viocell.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Visiocell</h4>
                   <p>PHP, Wordpress</p>
-                  <a href="/img/portfolio/viocell.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/viocell.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://visiocell.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1136,11 +1136,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-shopify">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/samarqand.png" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/samarqand.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Samarqand Fabrics</h4>
                   <p>Shopify</p>
-                  <a href="/img/portfolio/samarqand.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/samarqand.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://samarqandfabrics.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1148,11 +1148,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-shopify">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/mughaliazw.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/mughaliazw.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Mughaliaz</h4>
                   <p>Shopify</p>
-                  <a href="/img/portfolio/mughaliazw.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/mughaliazw.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://mughaliaz.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1160,11 +1160,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wordpress">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/h3Account.jpg" class="img-fluid" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/h3Account.webp" class="img-fluid" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>H3 Accountants</h4>
                   <p>Php,Wordpress</p>
-                  <a href="/img/portfolio/h3Account.jpg" class="glightbox preview-link">
+                  <a href="/img/portfolio/h3Account.webp" class="glightbox preview-link">
                     <i class="bi bi-zoom-in"></i>
                   </a>
                   <a href="https://h3accountants.com.au/" class="details-link">
@@ -1176,11 +1176,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-shopify">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/sunnybloom.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/sunnybloom.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Sunny Bloom</h4>
                   <p>Shopify</p>
-                  <a href="/img/portfolio/sunnybloom.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/sunnybloom.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://sunnybloom.co.uk/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1190,11 +1190,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/nics.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/nics.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>NICS CSS Leads Ads</h4>
                   <p>We generate 500+ Leads in just one week</p>
-                  <a href="/img/portfolio/nics.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/nics.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://www.facebook.com/NICSLHR" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1202,11 +1202,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/Mughaliaz.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/Mughaliaz.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Mughaliaz Sales Ads</h4>
                   <p>2-10 million sale in just Three Month</p>
-                  <a href="/img/portfolio/Mughaliaz.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/Mughaliaz.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://mughaliaz.com/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1214,11 +1214,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/hotel.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/hotel.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Toor Hotel Appartments Leads Ads</h4>
                   <p>We deliver 300+ targeted leads.</p>
-                  <a href="/img/portfolio/hotel.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/hotel.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://www.facebook.com/toorhotelapartments" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>
@@ -1226,11 +1226,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
               <div class="rounded shadow-sm h-100 d-flex flex-column" style="border: 4px solid #12a16b">
-                <img src="img/portfolio/spectra.jpg" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
+                <img src="img/portfolio/spectra.webp" class="img-fluid w-100" alt="" style="height:250px; object-fit:cover;">
                 <div class="portfolio-info flex-grow-1">
                   <h4>Sunny Bloom</h4>
                   <p>Generated 5M+ in sales within 4 months.</p>
-                  <a href="/img/portfolio/spectra.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/img/portfolio/spectra.webp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://sunnybloom.co.uk/" class="details-link"> <i class="bi bi-arrow-right-short"></i></a>
                 </div>
               </div>

@@ -55,8 +55,8 @@
               <div class="contact-text">
                 <h4>Email</h4>
                 <p>
-                  <a href="mailto:thepakcoder@gmail.com" class="text-decoration-none">
-                    thepakcoder@gmail.com
+                  <a href="mailto:contact@pakcoder.com" class="text-decoration-none">
+                    contact@pakcoder.com
                   </a>
                 </p>
               </div>
