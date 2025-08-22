@@ -11,6 +11,9 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Preconnect -->
     <link rel="preconnect" href="{{ url('/') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,9 +39,6 @@
 
     <!-- Main CSS -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
-
-    <!-- CKEditor CDN -->
-    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
 
     <!-- =======================================================
     * Template Name: Passion

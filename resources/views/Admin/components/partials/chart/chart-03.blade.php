@@ -1,12 +1,12 @@
 <div
-  class="rounded-2xl border border-gray-200 bg-white px-5 pb-5 pt-5 dark:border-gray-800 dark:bg-white/[0.03] sm:px-6 sm:pt-6"
+  class="rounded-2xl border border-gray-200 bg-white px-5 pb-5 pt-5 sm:px-6 sm:pt-6"
 >
   <div class="flex flex-col gap-5 mb-6 sm:flex-row sm:justify-between">
     <div class="w-full">
-      <h3 class="text-lg font-semibold text-gray-800 dark:text-white/90">
+      <h3 class="text-lg font-semibold text-gray-800">
         Statistics
       </h3>
-      <p class="mt-1 text-gray-500 text-theme-sm dark:text-gray-400">
+      <p class="mt-1 text-gray-500 text-theme-sm">
         Target you’ve set for each month
       </p>
     </div>
@@ -14,26 +14,26 @@
     <div class="flex items-start w-full gap-3 sm:justify-end">
       <div
         x-data="{selected: 'overview'}"
-        class="inline-flex w-fit items-center gap-0.5 rounded-lg bg-gray-100 p-0.5 dark:bg-gray-900"
+        class="inline-flex w-fit items-center gap-0.5 rounded-lg bg-gray-100 p-0.5"
       >
         <button
           @click="selected = 'overview'"
-          :class="selected === 'overview' ? 'shadow-theme-xs text-gray-900 dark:text-white bg-white dark:bg-gray-800' : 'text-gray-500 dark:text-gray-400'"
-          class="px-3 py-2 font-medium rounded-md text-theme-sm hover:text-gray-900 dark:hover:text-white"
+          :class="selected === 'overview' ? 'shadow-theme-xs text-gray-900 bg-white' : 'text-gray-500'"
+          class="px-3 py-2 font-medium rounded-md text-theme-sm hover:text-gray-900"
         >
           Overview
         </button>
         <button
           @click="selected = 'sales'"
-          :class="selected === 'sales' ? 'shadow-theme-xs text-gray-900 dark:text-white bg-white dark:bg-gray-800' : 'text-gray-500 dark:text-gray-400'"
-          class="px-3 py-2 font-medium rounded-md text-theme-sm hover:text-gray-900 dark:hover:text-white"
+          :class="selected === 'sales' ? 'shadow-theme-xs text-gray-900 bg-white' : 'text-gray-500'"
+          class="px-3 py-2 font-medium rounded-md text-theme-sm hover:text-gray-900"
         >
           Sales
         </button>
         <button
           @click="selected = 'revenue'"
-          :class="selected === 'revenue' ? 'shadow-theme-xs text-gray-900 dark:text-white bg-white dark:bg-gray-800' : 'text-gray-500 dark:text-gray-400'"
-          class="px-3 py-2 font-medium rounded-md text-theme-sm hover:text-gray-900 dark:hover:text-white"
+          :class="selected === 'revenue' ? 'shadow-theme-xs text-gray-900 bg-white' : 'text-gray-500'"
+          class="px-3 py-2 font-medium rounded-md text-theme-sm hover:text-gray-900"
         >
           Revenue
         </button>
@@ -41,7 +41,7 @@
 
       <div class="relative w-fit">
         <input
-          class="datepicker h-10 w-full max-w-11 rounded-lg border border-gray-200 bg-white py-2.5 pl-[34px] pr-4 text-theme-sm font-medium text-gray-700 shadow-theme-xs focus:outline-hidden focus:ring-0 focus-visible:outline-hidden dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 xl:max-w-fit xl:pl-11"
+          class="datepicker h-10 w-full max-w-11 rounded-lg border border-gray-200 bg-white py-2.5 pl-[34px] pr-4 text-theme-sm font-medium text-gray-700 shadow-theme-xs focus:outline-hidden focus:ring-0 focus-visible:outline-hidden xl:max-w-fit xl:pl-11"
           placeholder="Select dates"
           data-class="flatpickr-right"
           readonly="readonly"
@@ -50,7 +50,7 @@
           class="absolute inset-0 right-auto flex items-center pointer-events-none left-4"
         >
           <svg
-            class="fill-gray-700 dark:fill-gray-400"
+            class="fill-gray-700"
             width="20"
             height="20"
             viewBox="0 0 20 20"

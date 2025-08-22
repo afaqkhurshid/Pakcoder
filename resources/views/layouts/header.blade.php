@@ -25,13 +25,16 @@
         <ul>
           <li><a href="{{ url('/') }}" class="active">Home</a></li>
           <li><a href="{{ url('/') }}#about">About</a></li>
-          <li><a href="{{ url('/') }}#services">Services</a></li>
-          <li><a href="{{ url('/') }}#portfolio">Portfolio</a></li>
+          {{-- <li><a href="{{ url('/') }}#services">Services</a></li>
+          <li><a href="{{ url('/') }}#portfolio">Portfolio</a></li> --}}
           <li><a href="{{ url('/') }}#team">Team</a></li>
-          {{-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              @foreach ($technologies as $technology)
+                <li><a href="{{ route('portfolio', ["slug" => $technology->slug]) }}">{{ $technology->name }}</a></li>
+              @endforeach
+              {{-- <li><a href="#">Dropdown 1</a></li> --}}
+              {{-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="https://wa.me/923134672846" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
@@ -39,12 +42,16 @@
                   <li><a href="#">Deep Dropdown 4</a></li>
                   <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              </li> --}}
             </ul>
-          </li> --}}
+          </li>
+          <li class="dropdown"><a href="#"><span>Stacks</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              @foreach ($stacks as $stack)
+                <li><a href="#">{{ $stack->name }}</a></li>
+              @endforeach
+            </ul>
+          </li>
           <!-- Megamenu 2 -->
           {{-- <li class="megamenu-2"><a href="#"><span>Megamenu</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <!-- Mobile Megamenu -->

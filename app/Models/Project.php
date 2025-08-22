@@ -20,6 +20,7 @@ class Project extends Model
 
     public function technologies()
     {
+        
         // return $this->belongsToMany(ProjectTechnology::class, 'project_technology')
         //             ->using(ProjectTechnologyPivot::class)
         //             ->withTimestamps();

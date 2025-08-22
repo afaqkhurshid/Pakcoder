@@ -1,15 +1,15 @@
 <div
-  class="overflow-hidden rounded-2xl border border-gray-200 bg-white px-5 pt-5 dark:border-gray-800 dark:bg-white/[0.03] sm:px-6 sm:pt-6"
+  class="overflow-hidden rounded-2xl border border-gray-200 bg-white px-5 pt-5 sm:px-6 sm:pt-6"
 >
   <div class="flex items-center justify-between">
-    <h3 class="text-lg font-semibold text-gray-800 dark:text-white/90">
+    <h3 class="text-lg font-semibold text-gray-800">
       Monthly Sales
     </h3>
 
     <div x-data="{openDropDown: false}" class="relative h-fit">
       <button
         @click="openDropDown = !openDropDown"
-        :class="openDropDown ? 'text-gray-700 dark:text-white' : 'text-gray-400 hover:text-gray-700 dark:hover:text-white'"
+        :class="openDropDown ? 'text-gray-700' : 'text-gray-400 hover:text-gray-700'"
       >
         <svg
           class="fill-current"
@@ -30,15 +30,15 @@
       <div
         x-show="openDropDown"
         @click.outside="openDropDown = false"
-        class="absolute right-0 z-40 w-40 p-2 space-y-1 bg-white border border-gray-200 top-full rounded-2xl shadow-theme-lg dark:border-gray-800 dark:bg-gray-dark"
+        class="absolute right-0 z-40 w-40 p-2 space-y-1 bg-white border border-gray-200 top-full rounded-2xl shadow-theme-lg"
       >
         <button
-          class="flex w-full px-3 py-2 font-medium text-left text-gray-500 rounded-lg text-theme-xs hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-300"
+          class="flex w-full px-3 py-2 font-medium text-left text-gray-500 rounded-lg text-theme-xs hover:bg-gray-100 hover:text-gray-700"
         >
           View More
         </button>
         <button
-          class="flex w-full px-3 py-2 font-medium text-left text-gray-500 rounded-lg text-theme-xs hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-300"
+          class="flex w-full px-3 py-2 font-medium text-left text-gray-500 rounded-lg text-theme-xs hover:bg-gray-100 hover:text-gray-700"
         >
           Delete
         </button>

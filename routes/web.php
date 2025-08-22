@@ -19,7 +19,9 @@ require __DIR__.'/auth.php';
 // });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/portfolio/{id?}', [PortfolioController::class, 'index'])->name('portfolio');
+// Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio.list');
+// Route::get('/portfolio/{id}', [PortfolioController::class, 'index'])->name('portfolio.id');
+Route::get('/portfolio/{slug?}/{id?}', [PortfolioController::class, 'index'])->name('portfolio');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/page-not-found', [ErrorController::class, 'index'])->name('page-not-found');
 Route::get('/service-details', [ServiceDetailsrController::class, 'index'])->name('service-details');
@@ -44,8 +46,8 @@ Route::get('/clear-cache', function() {Artisan::call('cache:clear');return 'Appl
 Route::get('/route-clear', function() {Artisan::call('route:clear');return 'Route cache cleared!';});
 
 // Admin Routes
-Route::prefix('projects')->group(function () {
+Route::prefix('admin')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
-    Route::get('/create', [ProjectController::class, 'create'])->name('projects.create');
-    Route::post('/store', [ProjectController::class, 'store'])->name('projects.store');
+    Route::get('/create', [ProjectController::class, 'create'])->name('admin.create');
+    Route::post('/store', [ProjectController::class, 'store'])->name('admin.store');
 });

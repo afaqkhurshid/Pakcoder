@@ -14,7 +14,7 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="">Home</a></li>
-            <li class="current">Portfolio</li>
+            <li class="current">Portfolio Details</li>
           </ol>
         </nav>
       </div>
@@ -50,8 +50,7 @@
     <section id="portfolio" class="py-12 bg-gray-50">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {{-- @dd($projects); --}}
-            @foreach ($projects as $project)
+            @foreach ($technology->projects as $project)
             <div class="bg-white rounded-lg shadow-md overflow-hidden border-4 border-emerald-600 flex flex-col h-full transition-transform duration-300 hover:scale-105">
                 <!-- Project Thumbnail -->
                 <img src="{{ asset($project->thumbnail) }}" 
@@ -64,18 +63,21 @@
                     
                     <!-- Technology Badge -->
                     <div class="mb-3">
-                      @foreach ($project->technologies as $technology)                        
+                        {{-- @dd($project->id); --}}
+                      {{-- @dd($project->technologies); --}}
+                      @foreach ($project->technologies as $ptechnology)
                         <button class="inline-block bg-[#059668] text-white px-3 py-1 rounded-[10px]">
                             <span class="text-sm">
-                                    {{ $technology->name }}
-                                </span>
+                                {{ $ptechnology->name }}
+                            </span>
                         </button>
                       @endforeach
                     </div>
+                    
                     <!-- Action Button -->
-                    <div class="mt-auto flex justify-center items-center">
+                    <div class="mt-auto flex justify-end items-center">  
                         <!-- Explore Button -->
-                        <a href="{{ route('portfolio', [$project->technologies[0]->slug, $project->slug]) }}"
+                        <a href="{{ route('portfolio', ['slug' => $technology->slug, 'id' => $project->id]) }}"
                            class="hover:border-[1px] hover:border-[#059668] text-black px-2 py-1 rounded-md text-base flex items-center gap-[10px]">
                             <span>Explore More</span><i class="bi bi-arrow-right-short text-lg"></i>
                         </a>

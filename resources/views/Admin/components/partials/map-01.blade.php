@@ -1,12 +1,12 @@
 <div
-  class="rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] sm:p-6"
+  class="rounded-2xl border border-gray-200 bg-white p-5"
 >
   <div class="flex justify-between">
     <div>
-      <h3 class="text-lg font-semibold text-gray-800 dark:text-white/90">
+      <h3 class="text-lg font-semibold text-gray-800">
         Customers Demographic
       </h3>
-      <p class="mt-1 text-theme-sm text-gray-500 dark:text-gray-400">
+      <p class="mt-1 text-theme-sm text-gray-500">
         Number of customer based on country
       </p>
     </div>
@@ -14,7 +14,7 @@
     <div x-data="{openDropDown: false}" class="relative h-fit">
       <button
         @click="openDropDown = !openDropDown"
-        :class="openDropDown ? 'text-gray-700 dark:text-white' : 'text-gray-400 hover:text-gray-700 dark:hover:text-white'"
+        :class="openDropDown ? 'text-gray-700' : 'text-gray-400 hover:text-gray-700'"
       >
         <svg
           class="fill-current"
@@ -35,15 +35,15 @@
       <div
         x-show="openDropDown"
         @click.outside="openDropDown = false"
-        class="absolute right-0 top-full z-40 w-40 space-y-1 rounded-2xl border border-gray-200 bg-white p-2 shadow-theme-lg dark:border-gray-800 dark:bg-gray-dark"
+        class="absolute right-0 top-full z-40 w-40 space-y-1 rounded-2xl border border-gray-200 bg-white p-2 shadow-theme-lg"
       >
         <button
-          class="flex w-full rounded-lg px-3 py-2 text-left text-theme-xs font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-300"
+          class="flex w-full rounded-lg px-3 py-2 text-left text-theme-xs font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
         >
           View More
         </button>
         <button
-          class="flex w-full rounded-lg px-3 py-2 text-left text-theme-xs font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-300"
+          class="flex w-full rounded-lg px-3 py-2 text-left text-theme-xs font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
         >
           Delete
         </button>
@@ -51,7 +51,7 @@
     </div>
   </div>
   <div
-    class="border-gary-200 my-6 overflow-hidden rounded-2xl border bg-gray-50 px-4 py-6 dark:border-gray-800 dark:bg-gray-900 sm:px-6"
+    class="border-gary-200 my-6 overflow-hidden rounded-2xl border bg-gray-50 px-4 py-6 sm:px-6"
   >
     <div
       id="mapOne"
@@ -63,15 +63,15 @@
     <div class="flex items-center justify-between">
       <div class="flex items-center gap-3">
         <div class="w-full max-w-8 items-center rounded-full">
-          <img src="./images/country/country-01.svg" alt="usa" />
+          <img  src="{{ asset('images/country/country-01.svg') }}" alt="usa" />
         </div>
         <div>
           <p
-            class="text-theme-sm font-semibold text-gray-800 dark:text-white/90"
+            class="text-theme-sm font-semibold text-gray-800"
           >
             USA
           </p>
-          <span class="block text-theme-xs text-gray-500 dark:text-gray-400">
+          <span class="block text-theme-xs text-gray-500">
             2,379 Customers
           </span>
         </div>
@@ -79,13 +79,13 @@
 
       <div class="flex w-full max-w-[140px] items-center gap-3">
         <div
-          class="relative block h-2 w-full max-w-[100px] rounded-sm bg-gray-200 dark:bg-gray-800"
+          class="relative block h-2 w-full max-w-[100px] rounded-sm bg-gray-200"
         >
           <div
             class="absolute left-0 top-0 flex h-full w-[79%] items-center justify-center rounded-sm bg-brand-500 text-xs font-medium text-white"
           ></div>
         </div>
-        <p class="text-theme-sm font-medium text-gray-800 dark:text-white/90">
+        <p class="text-theme-sm font-medium text-gray-800">
           79%
         </p>
       </div>
@@ -94,15 +94,15 @@
     <div class="flex items-center justify-between">
       <div class="flex items-center gap-3">
         <div class="w-full max-w-8 items-center rounded-full">
-          <img src="./images/country/country-02.svg" alt="france" />
+          <img src="{{ asset('images/country/country-02.svg') }}" alt="france" />
         </div>
         <div>
           <p
-            class="text-theme-sm font-semibold text-gray-800 dark:text-white/90"
+            class="text-theme-sm font-semibold text-gray-800"
           >
             France
           </p>
-          <span class="block text-theme-xs text-gray-500 dark:text-gray-400">
+          <span class="block text-theme-xs text-gray-500">
             589 Customers
           </span>
         </div>
@@ -110,13 +110,13 @@
 
       <div class="flex w-full max-w-[140px] items-center gap-3">
         <div
-          class="relative block h-2 w-full max-w-[100px] rounded-sm bg-gray-200 dark:bg-gray-800"
+          class="relative block h-2 w-full max-w-[100px] rounded-sm bg-gray-200"
         >
           <div
             class="absolute left-0 top-0 flex h-full w-[23%] items-center justify-center rounded-sm bg-brand-500 text-xs font-medium text-white"
           ></div>
         </div>
-        <p class="text-theme-sm font-medium text-gray-800 dark:text-white/90">
+        <p class="text-theme-sm font-medium text-gray-800">
           23%
         </p>
       </div>

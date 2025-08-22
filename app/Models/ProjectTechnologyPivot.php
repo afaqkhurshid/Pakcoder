@@ -17,13 +17,13 @@ class ProjectTechnologyPivot extends Model
         'technology_id'
     ];
 
-    // public function projects()
-    // {
-    //     return $this->belongsTo(Project::class, 'id', 'project_id');
-    // }
+    public function projects()
+    {
+        return $this->belongsTo(Project::class, 'id', 'project_id');
+    }
 
-    // public function technology()
-    // {
-    //     return $this->belongsTo(ProjectTechnology::class, 'project_id', 'id');
-    // }
+    public function technology()
+    {
+        return $this->belongsTo(ProjectTechnology::class, 'project_id', 'id');
+    }
 }

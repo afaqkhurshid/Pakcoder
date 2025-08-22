@@ -18,13 +18,12 @@ class ProjectController extends Controller
     {
         $technologies = ProjectTechnology::all();
         $stacks = ProjectStack::all();
-        return view('Admin.add-project', compact('technologies', 'stacks'));
+        return view('Admin.components.Portfolio.add-project', compact('technologies', 'stacks'));
     }
     
     public function store(Request $request)
     {
         try {
-            // dd($request);
             // Validate the request data
             $validated = $request->validate([
                 'title' => 'required|string|max:255',
@@ -46,6 +45,15 @@ class ProjectController extends Controller
                 'images.*' => 'nullable|file|mimes:jpg,webp|max:2048'
             ]);
 
+            // Generate slug from title
+            $slug = Str::slug($validated['title']);
+            
+            // Ensure slug is unique
+            $count = Project::where('slug', $slug)->count();
+            if ($count > 0) {
+                $slug = $slug . '-' . ($count + 1);
+            }
+
             // Handle thumbnail upload
             // $thumbnailPath = $request->file('thumbnail')->store('project-thumbnails', 'public');
             $thumbnailFile = $request->file('thumbnail');
@@ -56,6 +64,7 @@ class ProjectController extends Controller
             // Create the project
             $project = Project::create([
                 'name' => $validated['title'],
+                'slug' => $slug,
                 'website_url' => $validated['project_url'],
                 'description' => $validated['description'],
                 'active_users' => $validated['active_users'],
