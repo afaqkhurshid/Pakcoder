@@ -95,15 +95,15 @@
               @csrf
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control  border-green" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control  border-green" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
                 <div class="row mt-3">
                   <div class="col-md-6 form-group">
-                    <select class="form-control" name="service" id="service" required>
+                    <select class="form-control  border-green" name="service" id="service" required>
                       <option value="" disabled selected>What service do you need?</option>
                       <option value="web-development">Web Development (Laravel/PHP)</option>
                       <option value="wordpress">WordPress Development</option>
@@ -113,11 +113,11 @@
                     </select>
                   </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
-                      <input type="number" name="phone" class="form-control" id="phone" placeholder="Your Phone" required>
+                      <input type="number" name="phone" class="form-control  border-green" id="phone" placeholder="Your Phone" required>
                   </div>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+                <textarea class="form-control  border-green" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
               </div>
 
               <div class="my-3">
