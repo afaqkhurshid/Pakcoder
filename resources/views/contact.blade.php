@@ -140,6 +140,87 @@
       {{-- </div> --}}
     </div>
   </section><!-- /Contact Section -->
+  
+<script>
+
+$(document).ready(function() {
+
+    $('.php-email-form').submit(function(e) {
+        e.preventDefault();
+        
+        var form = $(this);
+        var submitBtn = form.find('button[type="submit"]');
+
+        if(submitBtn.length === 0) {
+            console.error('Submit button not found in the form');
+            return;
+        }
+        
+        var originalBtnText = submitBtn.html();
+        submitBtn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...');
+        
+        $.ajax({
+            url: form.attr('action') || '{{ route("contact.submit") }}', // Fallback if action attribute is missing
+            type: 'post',
+            data: form.serialize(),
+            dataType: 'json',
+            success: function(response) {
+                if(response.success) {
+                    // Show success message
+                    form.prepend(
+                        '<div class="alert alert-success alert-dismissible fade show" role="alert">' +
+                        'Thank you! Your message has been sent. We will contact you soon.' +
+                        '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                        '</div>'
+                    );
+                    
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-17487709730/Xww0CP-WpowbEKKM5ZJB'
+                    });
+                    
+                    // Reset form
+                    form.trigger('reset');
+                } else {
+                    // Show error message
+                    form.prepend(
+                        '<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
+                        'Error: ' + (response.message || 'Something went wrong. Please try again.') +
+                        '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                        '</div>'
+                    );
+                }
+            },
+            error: function(xhr) {
+                var errorMessage = 'An error occurred. Please try again.';
+                if(xhr.responseJSON && xhr.responseJSON.message) {
+                    errorMessage = xhr.responseJSON.message;
+                } else if(xhr.statusText) {
+                    errorMessage = xhr.statusText;
+                }
+                
+                form.prepend(
+                    '<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
+                    errorMessage +
+                    '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                    '</div>'
+                );
+            },
+            complete: function() {
+                submitBtn.prop('disabled', false).html(originalBtnText);
+                
+                // Remove alerts after 5 seconds
+                setTimeout(function() {
+                    form.find('.alert').fadeOut(500, function() {
+                        $(this).remove();
+                    });
+                }, 5000);
+            }
+        });
+    });
+
+});
+
+</script>
 
 
 </main>

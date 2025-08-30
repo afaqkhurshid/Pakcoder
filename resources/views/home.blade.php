@@ -558,19 +558,6 @@
           <div class="swiper-slide">
             <div class="team-card">
               <div class="team-image">
-                <img src="img/team/6.webp" class="img-fluid team-image-size" alt="" loading="lazy" >
-              </div>
-              <div class="team-content">
-                <h3>Afaq Khurshid</h3>
-                <span>Full-Stack Developer</span>
-                <p>Expert in Laravel, PHP, MERN & MEAN stacks, delivering scalable and high-performance applications for clients worldwide.</p>
-              </div>
-            </div><!-- End Team Card -->
-          </div><!-- End slide item -->
-
-          <div class="swiper-slide">
-            <div class="team-card">
-              <div class="team-image">
                 <img src="img/team/8.webp" class="img-fluid team-image-size" alt="" loading="lazy" >
               </div>
               <div class="team-content">
@@ -633,6 +620,20 @@
               </div>
             </div><!-- End Team Card -->
           </div><!-- End slide item -->
+
+          <div class="swiper-slide">
+            <div class="team-card">
+              <div class="team-image">
+                <img src="img/team/6.webp" class="img-fluid team-image-size" alt="" loading="lazy" >
+              </div>
+              <div class="team-content">
+                <h3>Afaq Khurshid</h3>
+                <span>Full-Stack Developer</span>
+                <p>Expert in Laravel, PHP, MERN & MEAN stacks, delivering scalable and high-performance applications for clients worldwide.</p>
+              </div>
+            </div><!-- End Team Card -->
+          </div><!-- End slide item -->
+
         </div>
 
         <div class="swiper-pagination"></div>
@@ -1581,6 +1582,10 @@ $(document).ready(function() {
                         '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
                         '</div>'
                     );
+                    
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-17487709730/Xww0CP-WpowbEKKM5ZJB'
+                    });
                     
                     // Reset form
                     form.trigger('reset');
