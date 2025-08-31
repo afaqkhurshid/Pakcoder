@@ -3,6 +3,59 @@
 @section('content')
 
 <style>
+
+   .icon-circle {
+      background: #198754;
+      color: #fff;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+/* 
+    .select-drop-down {
+      appearance: auto !important;
+      background: #fff !important;
+    } */
+
+    /* .btn-success {
+      background: linear-gradient(135deg, #198754, #28a745);
+      border: none;
+    }
+
+    .btn-success:hover {
+      background: linear-gradient(135deg, #157347, #218838);
+    } */
+  .modal-dialog {
+    max-width: 950px; /* control size */
+  }
+  .modal-content {
+    border-radius: 12px; /* rounded edges */
+  }
+
+  /* Mobile adjustments */
+  @media (max-width: 576px) {
+    .modal-dialog {
+      max-width: 92%; /* almost full screen on small devices */
+    }
+    #popupForm .form-control {
+      padding: 6px 10px;
+      font-size: 14px;
+      height: 34px;
+    }
+    #popupForm textarea.form-control {
+      height: 70px !important;
+    }
+    #popupForm button {
+      padding: 6px;
+      font-size: 14px;
+    }
+  }
+  
   .hero-visual form {
     background: rgba(0, 0, 0, 0.6); 
     padding: 20px;
@@ -107,7 +160,7 @@
                   <input type="text" name="name" class="form-control border-green" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" name="email" class="form-control border-green" placeholder="Your Email" required>
+                  <input type="email" name="email" class="form-control border-green lead-input"  data-type="email"  placeholder="Your Email" required>
                 </div>
               </div>
 
@@ -124,7 +177,7 @@
                   </select>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="number" name="phone" class="form-control border-green" placeholder="Your Phone" required>
+                  <input type="number" name="phone" class="form-control border-green lead-input" data-type="number" placeholder="Your Phone" required>
                 </div>
               </div>
               <div class="form-group mt-3">
@@ -1550,9 +1603,125 @@
 
 </main>
 
+<div class="container text-center py-5"  style="display:none;">
+  <button class="btn btn-success" id="model-open-show" data-bs-toggle="modal" data-bs-target="#offerModal">
+    Open Modal Demo
+  </button>
+</div>
+
+<div class="modal fade" id="offerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body p-4">
+        <div class="row g-4">
+          
+          <!-- Left Section -->
+          <div class="col-12 col-md-6">
+            <h4 class="fw-bold mb-4">
+              🚀 Get Your Website, Plus <br> So Much More
+            </h4>
+
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-start mb-3">
+                <span class="icon-circle me-3">🎨</span>
+                <div>
+                  <strong>Free Business Logo Design</strong><br>
+                  <small>Crafted to Match Your Brand Vision</small>
+                </div>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <span class="icon-circle me-3">🌐</span>
+                <div>
+                  <strong>Free Hosting for 1 Month</strong><br>
+                  <small>Reliable Hosting. No Extra Charges</small>
+                </div>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <span class="icon-circle me-3">📈</span>
+                <div>
+                  <strong>Free SEO for 1 Month</strong><br>
+                  <small>Boost Rankings on Google from Day One</small>
+                </div>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <span class="icon-circle me-3">💷</span>
+                <div>
+                  <strong>Spread Your Cost Over 12 Months</strong><br>
+                  <small>Start Now. Pay Monthly, Stress-Free.</small>
+                </div>
+              </li>
+            </ul>
+
+            {{-- <hr> --}}
+            {{-- <p class="small mb-0">🌟 We’re rated <strong>4.7 ★</strong> on Google with 98% five-star reviews.</p> --}}
+          </div>
+
+          <!-- Right Section (Form) -->
+          <div class="col-12 col-md-6">
+            <h4 class="fw-bold mb-3">Ready to Build Something Great? Let’s Talk.</h4>
+            <p class="small text-muted">⏳ This is a limited-time offer. Fill in the form to claim your bonuses.</p>
+
+            <!-- Laravel Form -->
+              <form id="contactForm" method="post" class="php-email-form">
+                  @csrf
+                  <div class="row">
+                      <div class="col-md-6 mb-2">
+                      <label for="name" class="form-label">Full Name</label>
+                      <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                      </div>
+
+                      <div class="col-md-6 mb-2">
+                      <label for="phone" class="form-label">Phone No</label>
+                      <input type="number" id="phone" name="phone" class="form-control lead-input" data-type="number" placeholder="Your Phone" required>
+                      </div>
+
+                      <div class="col-md-6 mb-2">
+                      <label for="service" class="form-label">Service Required</label>
+                      <select id="service" name="service" class="form-control select-drop-down" required>
+                          <option value="" disabled selected>What service do you need?</option>
+                          <option value="web-development">Web Development (Laravel/PHP)</option>
+                          <option value="wordpress">WordPress Development</option>
+                          <option value="shopify">Shopify/eCommerce</option>
+                          <option value="ui-ux">UI/UX Design</option>
+                          <option value="digital-marketing">Digital Marketing</option>
+                          <option value="other">Other</option>
+                      </select>
+                      </div>
+
+                      <div class="col-md-6 mb-2">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" id="email" name="email" class="form-control lead-input" data-type="email" placeholder="Your Email" required>
+                      </div>
+
+                      <div class="col-12 mb-2">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about your project" required></textarea>
+                      </div>
+                  </div>
+                  <button type="submit" class="btn btn-success w-100">Submit</button>
+              </form>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 
 $(document).ready(function() {
+
+    setTimeout(function() {
+       $('#model-open-show').trigger('click');
+    }, 30000);
 
     $('.php-email-form').submit(function(e) {
         e.preventDefault();

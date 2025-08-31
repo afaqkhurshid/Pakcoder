@@ -56,3 +56,29 @@
     </div>
   </div>
 </footer>
+<script>
+
+$(document).ready(function() {
+
+  $(document).on('blur', '.lead-input', function() {
+    var value = $(this).val();
+    var type = $(this).attr('data-type');
+    if (value) {
+      var data = {};
+      data[type] = value;
+      $.ajax({
+        url: "{{ route('leads.store') }}",
+        method: 'POST',
+        data: Object.assign(data, {_token: '{{ csrf_token() }}'}),
+        success: function(response) {
+          // Optionally show a success message
+        },
+        error: function(xhr) {
+          // Optionally show an error message
+        }
+      });
+    }
+  });
+  
+});
+</script>

@@ -15,7 +15,7 @@
       <a href="{{ url('/') }}" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         {{-- <a href="{{ url('/') }}"> --}}
-            <img src="{{ asset('/img/logopak.png') }}" alt="Passion Logo" style="max-height: 170px; position:absolute;">
+            <img src="{{ asset('/img/logopak.png') }}" alt="Pakcoder Logo" style="max-height: 170px; position:absolute;">
         {{-- </a> --}}
         <!-- <img src="assets/img/logo.webp" alt=""> -->
         {{-- <h1 class="sitename"> --}}
