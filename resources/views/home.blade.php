@@ -39,8 +39,16 @@
     border-radius: 12px; /* rounded edges */
   }
 
+  .whatsapp-button-mobile{
+    display: none;
+  }
+
   /* Mobile adjustments */
   @media (max-width: 576px) {
+
+    .whatsapp-button-mobile{
+      display: block;
+    }
 
     .tick-design{
       display: block;
@@ -52,7 +60,7 @@
     }
 
     .modal-dialog {
-      max-width: 92%; /* almost full screen on small devices */
+      max-width: 100%; /* almost full screen on small devices */
     }
     #popupForm .form-control {
       padding: 6px 10px;
@@ -149,6 +157,39 @@
       max-width: 850px;
     }
   }
+
+  .rgb-border-form {
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 12px;
+    padding: 20px;
+    background: #fff;
+  }
+
+  .rgb-border-form::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 3px; /* border thickness */
+    border-radius: 12px;
+    background: linear-gradient(90deg,
+      red, orange, yellow, lime, cyan, blue, violet, red);
+    background-size: 300% 300%;
+    animation: rgbBorder 5s linear infinite;
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  @keyframes rgbBorder {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
 </style>
 
 <main class="main">
@@ -167,7 +208,7 @@
             <h1 class="fw-bold mb-4" style="font-size: 50px;">Build A Website That Drives Sales</h1>
             <p class="mb-4" style="font-size: 18px;">
               Not just a website. This is your silent sales team running 24/7. Built to attract the right audience,
-              keep them engaged, and turn them into paying customers – even while you sleep.
+              keep them engaged, and turn them into paying customers - even while you sleep.
             </p>
             
             <div class="tick-design">
@@ -184,6 +225,12 @@
                 {{-- <li class="color-grey"><i class="bi bi-check tick-icon"></i>  Disaster recovery for peace of mind</li> --}}
                 <li class="color-grey"><i class="bi bi-check tick-icon"></i>  Flexible payment plans</li>
               </ul>
+
+              <div class="mt-3 whatsapp-button-mobile" style="width: 100%">
+                <a href="https://wa.me/923134672846" target="_blank" class="btn btn-success" style="background-color: #198754; border-color: #198754; width: 100%; display: flex; gap: 8px; justify-content: center;">
+                  WhatsApp <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
             </div>
 
           </div>
@@ -192,7 +239,7 @@
         <!-- Right Section (Form + Buttons) -->
         <div class="col-lg-6">
           <div class="hero-visual">
-            <form method="post" class="php-email-form">
+            <form method="post"  id="contactForm" class="php-email-form rgb-border-form">
               @csrf
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -228,13 +275,12 @@
                 <button type="submit" class="btn btn-primary w-100">Reach Us</button>
               </div>
 
-              <!-- WhatsApp & Get Started Buttons Below the Form -->
               <div class="mt-3" style="width: 100%">
-                <a href="https://wa.me/923114810055" class="btn btn-success" style="background-color: #198754; border-color: #198754; width: 100%; display: flex; gap: 8px; justify-content: center;">
+                <a href="https://wa.me/923134672846" target="_blank" class="btn btn-success" style="background-color: #198754; border-color: #198754; width: 100%; display: flex; gap: 8px; justify-content: center;">
                   WhatsApp <i class="bi bi-whatsapp"></i>
                 </a>
               </div>
-              {{-- <a href="{{ route('contact') }}" class="btn btn-outline-light">Get Started</a> --}}
+
             </form>
           </div>
         </div>
@@ -434,158 +480,6 @@
     </div>
   </section><!-- /Clients Section -->
 
-  <!-- Featured Services Section -->
-  <section id="featured-services" class="featured-services section light-background">
-
-    <!-- Section Title -->
-    <div class="container section-title">
-      <h2>Our Key Services</h2>
-      <p>Building Brands and Driving Conversions for Lasting Growth</p>
-    </div><!-- End Section Title -->
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="services-content" data-aos-duration="900">
-            <span class="subtitle">Full-Service IT & Marketing Solutions</span>
-            <h2>From Clicks to Conversions. We Build & Market for Growth</h2>
-            <p data-aos-duration="800">
-             We don’t just run ads. We build complete systems to turn strangers into customers. From high-performance websites and apps to targeted marketing campaigns, our team covers everything: Facebook, Instagram, WhatsApp, YouTube, Google Ads, Laravel, Symfony, MERN, React, Node.js, Tailwind, and more. Our expert developers and marketers work together to ensure your campaigns bring real sales, not just traffic.
-            </p>
-            <div class="mt-4" data-aos-duration="1100">
-              <a href="{{ route('contact') }}" class="btn-consultation">
-                <span>Get a Free Strategy Session</span><i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="services-image">
-            <img src="img/services/it-marketing-team.webp" alt="IT & Marketing Solutions" class="rounded-4" style="width:100%; height: auto;">
-            <div class="shape-circle"></div>
-            <div class="shape-accent"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slider -->
-      <div class="row mt-5" data-aos-duration="1000">
-        <div class="col-12">
-          <div class="services-slider swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-              {
-                "slidesPerView": 3,
-                "spaceBetween": 20,
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "navigation": {
-                  "nextEl": ".swiper-nav-next",
-                  "prevEl": ".swiper-nav-prev"
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 1
-                  },
-                  "768": {
-                    "slidesPerView": 2
-                  },
-                  "992": {
-                    "slidesPerView": 3
-                  }
-                }
-              }
-            </script>
-            <div class="swiper-wrapper">
-
-              <!-- Digital Marketing -->
-              <div class="swiper-slide">
-                <div class="service-card">
-                  <div class="icon-box"><i class="bi bi-megaphone-fill"></i></div>
-                  <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
-                  <div class="content">
-                    <h4><a href="#">Digital Marketing Campaigns</a></h4>
-                    <p>High-ROI Facebook, Instagram, WhatsApp, YouTube & Google Ads that bring customers ready to buy.</p>
-                    <div class="service-number">01</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Web Development -->
-              <div class="swiper-slide">
-                <div class="service-card">
-                  <div class="icon-box"><i class="bi bi-code-slash"></i></div>
-                  <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
-                  <div class="content">
-                    <h4><a href="#">Custom Web & App Development</a></h4>
-                    <p>Laravel, Symfony, MERN, React, Node.js & Tailwind — tailored solutions for speed, scalability & sales.</p>
-                    <div class="service-number">02</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Conversion Optimization -->
-              <div class="swiper-slide">
-                <div class="service-card">
-                  <div class="icon-box"><i class="bi bi-graph-up-arrow"></i></div>
-                  <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
-                  <div class="content">
-                    <h4><a href="#">Conversion Rate Optimization</a></h4>
-                    <p>We track, test, and tweak every step of your funnel so clicks turn into paying customers.</p>
-                    <div class="service-number">03</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Branding & Creative -->
-              <div class="swiper-slide">
-                <div class="service-card">
-                  <div class="icon-box"><i class="bi bi-lightbulb-fill"></i></div>
-                  <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
-                  <div class="content">
-                    <h4><a href="#">Branding & Creative Design</a></h4>
-                    <p>Eye-catching designs & brand strategies that connect emotionally and stand out in the market.</p>
-                    <div class="service-number">04</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Maintenance & Scaling -->
-              <div class="swiper-slide">
-                <div class="service-card">
-                  <div class="icon-box"><i class="bi bi-shield-check"></i></div>
-                  <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
-                  <div class="content">
-                    <h4><a href="#">Ongoing Support & Scaling</a></h4>
-                    <p>Dedicated team to maintain, update, and scale your business as it grows.</p>
-                    <div class="service-number">05</div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slider Nav -->
-      <div class="row">
-        <div class="col-12">
-          <div class="swiper-navigation">
-            <button class="swiper-nav-prev"><i class="bi bi-chevron-left"></i></button>
-            <button class="swiper-nav-next"><i class="bi bi-chevron-right"></i></button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-  <!-- /Featured Services Section -->
-
     <!-- Team Section -->
   <section id="team" class="team section">
     <!-- Section Title -->
@@ -782,6 +676,81 @@
 
   </section><!-- /Team Section -->
 
+  <!-- Call To Action Section -->
+  <section id="call-to-action" class="call-to-action section light-background">
+    <div class="container">
+      <div class="cta-wrapper">
+        <div class="cta-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+        <div class="row g-0">
+          <div class="col-lg-7">
+            <div class="cta-content p-5">
+              <span class="badge-custom">Best-Selling Offer</span>
+              <h2 class="mt-4 mb-4">Shopify & WordPress Development + Marketing Campaign</h2>
+              <p class="mb-4">
+                Get a complete online store setup on <strong>Shopify</strong> or <strong>WordPress</strong> with a tailored
+                marketing fully customized store with free paid theme, campaign strategy to boost your sales from day one. This is our highest-selling package, trusted by clients..
+              </p>
+
+              <div class="row benefits-row mb-5">
+                <div class="col-md-6">
+                  <div class="benefit-item">
+                    <div class="icon-box">
+                      <i class="bi bi-lightning-charge-fill"></i>
+                    </div>
+                    <div class="benefit-content">
+                      <h5>Complete Store Setup</h5>
+                      <p>Fully functional, customized Shopify or WordPress eCommerce store with free paid theme installed.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="benefit-item">
+                    <div class="icon-box">
+                      <i class="bi bi-megaphone-fill"></i>
+                    </div>
+                    <div class="benefit-content">
+                      <h5>Marketing Campaign</h5>
+                      <p>Free One week help of marketing strategy implementation.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="action-buttons">
+                <a href="https://wa.me/923134672846" target="_blank" class="btn btn-primary">Get Started</a>
+                <a href="{{ route('contact') }}" class="btn btn-outline">Reach Us</a>
+                <div class="guarantee-badge">
+                  <i class="bi bi-patch-check-fill"></i>
+                  <span>Omani Rial 25 / RS 5500</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="cta-image-container">
+              <img src="img/illustration/illustration-3.webp" alt="Shopify & WordPress Offer" class="img-fluid main-image">
+              <div class="floating-element element-1">
+                <i class="bi bi-star-fill"></i>
+                <span>4.7 Rating</span>
+              </div>
+              <div class="floating-element element-2">
+                <i class="bi bi-people-fill"></i>
+                <span>50+ Happy Clients</span>
+              </div>
+              <div class="pattern-dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Call To Action Section -->
+
   <!-- Services Section -->
   <section id="services" class="services section light-background">
 
@@ -843,7 +812,7 @@
             <div class="service-content">
               <h3>Digital Marketing</h3>
               <p>We craft data-driven marketing campaigns that boost your brand visibility, attract the right audience, and drive measurable growth for your business.</p>
-              <a href="https://wa.me/923134672846" class="btn-cta">
+              <a href="https://wa.me/923134672846" target="_blank" class="btn-cta">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -860,7 +829,7 @@
             <div class="service-content">
               <h3>Security Solutions</h3>
               <p>We implement robust security measures to protect your website, data, and users from cyber threats — ensuring peace of mind and uninterrupted operations.</p>
-              <a href="https://wa.me/923134672846" class="btn-cta">
+              <a href="https://wa.me/923134672846" target="_blank" class="btn-cta">
                 <span>Discover</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -877,7 +846,7 @@
             <div class="service-content">
               <h3>Cloud Services</h3>
               <p>We offer scalable cloud hosting (AWS, Azure, cPanel), storage, and deployment solutions — giving your business the flexibility, speed, and reliability it needs to grow.</p>
-              <a href="https://wa.me/923134672846" class="btn-cta">
+              <a href="https://wa.me/923134672846" target="_blank" class="btn-cta">
                 <span>Get Quote</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -923,177 +892,158 @@
   </section>
   <!-- /Services Section -->
 
-  <!-- Call To Action Section -->
-  <section id="call-to-action" class="call-to-action section light-background">
+  <!-- Featured Services Section -->
+  <section id="featured-services" class="featured-services section light-background">
+
+    <!-- Section Title -->
+    <div class="container section-title">
+      <h2>Our Key Services</h2>
+      <p>Building Brands and Driving Conversions for Lasting Growth</p>
+    </div><!-- End Section Title -->
+
     <div class="container">
-      <div class="cta-wrapper">
-        <div class="cta-shapes">
-          <div class="shape shape-1"></div>
-          <div class="shape shape-2"></div>
-          <div class="shape shape-3"></div>
-        </div>
-        <div class="row g-0">
-          <div class="col-lg-7">
-            <div class="cta-content p-5">
-              <span class="badge-custom">Best-Selling Offer</span>
-              <h2 class="mt-4 mb-4">Shopify & WordPress Development + Marketing Campaign</h2>
-              <p class="mb-4">
-                Get a complete online store setup on <strong>Shopify</strong> or <strong>WordPress</strong> with a tailored
-                marketing campaign strategy to boost your sales from day one. This is our highest-selling package, trusted by clients worldwide.
-              </p>
 
-              <div class="row benefits-row mb-5">
-                <div class="col-md-6">
-                  <div class="benefit-item">
-                    <div class="icon-box">
-                      <i class="bi bi-lightning-charge-fill"></i>
-                    </div>
-                    <div class="benefit-content">
-                      <h5>Complete Store Setup</h5>
-                      <p>Fully functional Shopify or WordPress eCommerce store, ready to launch.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="benefit-item">
-                    <div class="icon-box">
-                      <i class="bi bi-megaphone-fill"></i>
-                    </div>
-                    <div class="benefit-content">
-                      <h5>Marketing Campaign</h5>
-                      <p>Custom ad strategy for UAE or Pakistan to bring targeted customers fast.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="action-buttons">
-                <a href="#" class="btn btn-primary">Get Started</a>
-                <a href="#" class="btn btn-outline">Learn More</a>
-                <div class="guarantee-badge">
-                  <i class="bi bi-patch-check-fill"></i>
-                  <span>AED 300 / PKR 25,000</span>
-                </div>
-              </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="services-content" data-aos-duration="900">
+            <span class="subtitle">Full-Service IT & Marketing Solutions</span>
+            <h2>From Clicks to Conversions. We Build & Market for Growth</h2>
+            <p data-aos-duration="800">
+             We don’t just run ads. We build complete systems to turn strangers into customers. From high-performance websites and apps to targeted marketing campaigns, our team covers everything: Facebook, Instagram, WhatsApp, YouTube, Google Ads, Laravel, Symfony, MERN, React, Node.js, Tailwind, and more. Our expert developers and marketers work together to ensure your campaigns bring real sales, not just traffic.
+            </p>
+            <div class="mt-4" data-aos-duration="1100">
+              <a href="{{ route('contact') }}" class="btn-consultation">
+                <span>Get a Free Strategy Session</span><i class="bi bi-arrow-right"></i>
+              </a>
             </div>
           </div>
-
-          <div class="col-lg-5">
-            <div class="cta-image-container">
-              <img src="img/illustration/illustration-3.webp" alt="Shopify & WordPress Offer" class="img-fluid main-image">
-              <div class="floating-element element-1">
-                <i class="bi bi-star-fill"></i>
-                <span>4.9 Rating</span>
-              </div>
-              <div class="floating-element element-2">
-                <i class="bi bi-people-fill"></i>
-                <span>10k+ Happy Clients</span>
-              </div>
-              <div class="pattern-dots"></div>
-            </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="services-image">
+            <img src="img/services/it-marketing-team.webp" alt="IT & Marketing Solutions" class="rounded-4" style="width:100%; height: auto;">
+            <div class="shape-circle"></div>
+            <div class="shape-accent"></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- /Call To Action Section -->
 
-
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonials section">
-
-    <div class="container">
-
-      <div class="swiper init-swiper">
-        <script type="application/json" class="swiper-config">
-          {
-            "loop": true,
-            "speed": 600,
-            "autoplay": {
-              "delay": 5000
-            },
-            "slidesPerView": "auto",
-            "pagination": {
-              "el": ".swiper-pagination",
-              "type": "bullets",
-              "clickable": true
-            },
-            "breakpoints": {
-              "320": {
-                "slidesPerView": 1,
-                "spaceBetween": 40
-              },
-              "1200": {
+      <!-- Slider -->
+      <div class="row mt-5" data-aos-duration="1000">
+        <div class="col-12">
+          <div class="services-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
                 "slidesPerView": 3,
-                "spaceBetween": 1
+                "spaceBetween": 20,
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "navigation": {
+                  "nextEl": ".swiper-nav-next",
+                  "prevEl": ".swiper-nav-prev"
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1
+                  },
+                  "768": {
+                    "slidesPerView": 2
+                  },
+                  "992": {
+                    "slidesPerView": 3
+                  }
+                }
               }
-            }
-          }
-        </script>
-        <div class="swiper-wrapper">
+            </script>
+            <div class="swiper-wrapper">
 
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>PakCoder built our Shopify store from the ground up with a strong focus on performance and scalability. Their expertise helped Mughaliaz.com grow faster, and they continue to be a reliable partner for our eCommerce journey.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-              {{-- <img src="img/team/person-m-9.webp" class="testimonial-img" alt=""> --}}
-              <h3>Moon Ali</h3>
-              <h4>Founder – Mughaliaz.com</h4>
+              <!-- Digital Marketing -->
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <div class="icon-box"><i class="bi bi-megaphone-fill"></i></div>
+                  <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+                  <div class="content">
+                    <h4><a href="#">Digital Marketing Campaigns</a></h4>
+                    <p>High-ROI Facebook, Instagram, WhatsApp, YouTube & Google Ads that bring customers ready to buy.</p>
+                    <div class="service-number">01</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Web Development -->
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <div class="icon-box"><i class="bi bi-code-slash"></i></div>
+                  <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+                  <div class="content">
+                    <h4><a href="#">Custom Web & App Development</a></h4>
+                    <p>Laravel, Symfony, MERN, React, Node.js & Tailwind — tailored solutions for speed, scalability & sales.</p>
+                    <div class="service-number">02</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Conversion Optimization -->
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <div class="icon-box"><i class="bi bi-graph-up-arrow"></i></div>
+                  <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+                  <div class="content">
+                    <h4><a href="#">Conversion Rate Optimization</a></h4>
+                    <p>We track, test, and tweak every step of your funnel so clicks turn into paying customers.</p>
+                    <div class="service-number">03</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Branding & Creative -->
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <div class="icon-box"><i class="bi bi-lightbulb-fill"></i></div>
+                  <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+                  <div class="content">
+                    <h4><a href="#">Branding & Creative Design</a></h4>
+                    <p>Eye-catching designs & brand strategies that connect emotionally and stand out in the market.</p>
+                    <div class="service-number">04</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Maintenance & Scaling -->
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <div class="icon-box"><i class="bi bi-shield-check"></i></div>
+                  <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+                  <div class="content">
+                    <h4><a href="#">Ongoing Support & Scaling</a></h4>
+                    <p>Dedicated team to maintain, update, and scale your business as it grows.</p>
+                    <div class="service-number">05</div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>We partnered with PakCoder to run digital campaigns for NICS CSS Academy, and the results were excellent. Their strategic approach brought us high-quality leads and greater visibility among our target audience.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-              {{-- <img src="img/team/person-f-5.webp" class="testimonial-img" alt=""> --}}
-              <h3>Muhammad Farukh</h3>
-              <h4>CEO – NICS CSS Academy</h4>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>PakCoder designed and executed a successful lead generation campaign for Data Estate. Their work delivered measurable results, and we saw a significant increase in client conversions thanks to their efforts.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-              {{-- <img src="img/team/person-f-12.webp" class="testimonial-img" alt=""> --}}
-              <h3>Ijaz Ahmad</h3>
-              <h4>Founder – Data Estate</h4>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>We trusted PakCoder to build our Laravel project with Bootstrap from scratch, and they delivered flawlessly. They deployed it to our server, ensuring a smooth launch. Their technical depth and reliability set them apart.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-              {{-- <img src="img/team/person-m-12.webp" class="testimonial-img" alt=""> --}}
-              <h3>Majid Sheikh</h3>
-              <h4>CTO – AMS</h4>
-            </div>
-          </div>
-
         </div>
-        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Slider Nav -->
+      <div class="row">
+        <div class="col-12">
+          <div class="swiper-navigation">
+            <button class="swiper-nav-prev"><i class="bi bi-chevron-left"></i></button>
+            <button class="swiper-nav-next"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
       </div>
 
     </div>
 
   </section>
-  <!-- /Testimonials Section -->
-
-
+  <!-- /Featured Services Section -->
+  
   <section id="portfolio" class="portfolio section">
 
     <!-- Section Title -->
@@ -1346,7 +1296,7 @@
 
   </section>
 
-    <!-- How We Work Section -->
+  <!-- How We Work Section -->
   <section id="how-we-work" class="how-we-work section">
 
     <!-- Section Title -->
@@ -1414,7 +1364,100 @@
 
   </section>
   <!-- /How We Work Section -->
+  
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials section">
 
+    <div class="container">
+
+      <div class="swiper init-swiper">
+        <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 5000
+            },
+            "slidesPerView": "auto",
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            },
+            "breakpoints": {
+              "320": {
+                "slidesPerView": 1,
+                "spaceBetween": 40
+              },
+              "1200": {
+                "slidesPerView": 3,
+                "spaceBetween": 1
+              }
+            }
+          }
+        </script>
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>PakCoder built our Shopify store from the ground up with a strong focus on performance and scalability. Their expertise helped Mughaliaz.com grow faster, and they continue to be a reliable partner for our eCommerce journey.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              {{-- <img src="img/team/person-m-9.webp" class="testimonial-img" alt=""> --}}
+              <h3>Moon Ali</h3>
+              <h4>Founder – Mughaliaz.com</h4>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>We partnered with PakCoder to run digital campaigns for NICS CSS Academy, and the results were excellent. Their strategic approach brought us high-quality leads and greater visibility among our target audience.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              {{-- <img src="img/team/person-f-5.webp" class="testimonial-img" alt=""> --}}
+              <h3>Muhammad Farukh</h3>
+              <h4>CEO – NICS CSS Academy</h4>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>PakCoder designed and executed a successful lead generation campaign for Data Estate. Their work delivered measurable results, and we saw a significant increase in client conversions thanks to their efforts.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              {{-- <img src="img/team/person-f-12.webp" class="testimonial-img" alt=""> --}}
+              <h3>Ijaz Ahmad</h3>
+              <h4>Founder – Data Estate</h4>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>We trusted PakCoder to build our Laravel project with Bootstrap from scratch, and they delivered flawlessly. They deployed it to our server, ensuring a smooth launch. Their technical depth and reliability set them apart.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              {{-- <img src="img/team/person-m-12.webp" class="testimonial-img" alt=""> --}}
+              <h3>Majid Sheikh</h3>
+              <h4>CTO – AMS</h4>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- /Testimonials Section -->
 
   <!-- FAQ Section -->
   <section id="faq" class="faq section bg-light">
@@ -1642,7 +1685,7 @@
 
           <div class="text-center mt-5 pt-4">
             <h4 class="mb-4">Still have questions?</h4>
-            <a href="https://wa.me/923134672846" class="btn btn-lg px-4" style="background-color:#12a16b; border:none; color:white">
+            <a href="https://wa.me/923134672846" target="_blank" class="btn btn-lg px-4" style="background-color:#12a16b; border:none; color:white">
               <i class="bi bi-chat-left-text me-2"></i> Get Personalized Answers
             </a>
           </div>
@@ -1660,7 +1703,7 @@
 </div>
 
 <div class="modal fade" id="offerModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" style=" margin: 0 auto;">
+  <div class="modal-dialog modal-dialog-centered" style=" margin-top: 10px;">
     <div class="modal-content">
 
       <div class="modal-header border-0">
@@ -1779,14 +1822,13 @@
   </div>
 </div>
 
-
 <script>
 
 $(document).ready(function() {
 
     setTimeout(function() {
        $('#model-open-show').trigger('click');
-    }, 1000);
+    }, 25000);
 
     $('.php-email-form').submit(function(e) {
         e.preventDefault();
