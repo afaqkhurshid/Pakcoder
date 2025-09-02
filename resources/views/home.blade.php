@@ -3,7 +3,22 @@
 @section('content')
 
 <style>
+  .tick-design{
+    display: flex;
+    gap: 5px;
+  }
+  .tick-icon {
+    color: #00d084 !important; /* Force override if needed */
+    margin-right: 6px;
+  }
 
+  ul li::before {
+    color: #00d084 !important;
+  }
+
+  .color-grey{
+       color: color-mix(in srgb, var(--default-color), transparent 30%);
+   }
    .icon-circle {
       background: #198754;
       color: #fff;
@@ -16,20 +31,7 @@
       font-size: 16px;
       flex-shrink: 0;
     }
-/* 
-    .select-drop-down {
-      appearance: auto !important;
-      background: #fff !important;
-    } */
 
-    /* .btn-success {
-      background: linear-gradient(135deg, #198754, #28a745);
-      border: none;
-    }
-
-    .btn-success:hover {
-      background: linear-gradient(135deg, #157347, #218838);
-    } */
   .modal-dialog {
     max-width: 950px; /* control size */
   }
@@ -39,6 +41,16 @@
 
   /* Mobile adjustments */
   @media (max-width: 576px) {
+
+    .tick-design{
+      display: block;
+      gap: 5px;
+    }
+
+    .tick-design ul{
+      margin-bottom: 0px;
+    }
+
     .modal-dialog {
       max-width: 92%; /* almost full screen on small devices */
     }
@@ -131,26 +143,37 @@
       <div class="overlay"></div>
     </div>
     <div class="container">
-
       <div class="row align-items-center">
-        
-        <!-- Left Text -->
-        <div class="col-lg-6">
-          <div class="hero-content">
-            <span class="hero-badge">IT SOLUTIONS EXPERTS</span>
-            <h1>Fast, Scalable & Custom Web Solutions</h1>
-            <p>PakCoder builds fast, secure, and scalable products in Laravel, PHP, Mern, Mean, WordPress, and Shopify—plus UI/UX and digital marketing to grow them.</p>
 
-            <div class="hero-actions gap-7px mb-2 d-flex justify-content-center justify-content-lg-start">
-              <a href="https://wa.me/923114810055" class="btn btn-success" style="width: 125px;display: flex;gap: 8px;justify-content:center;">
-                WhatsApp<i class="bi bi-whatsapp"></i>
-              </a>
-              <a href="{{ route('contact') }}" class="btn btn-outline-light">Get Started</a>
+        <!-- Left Section (Image-like Text Content) -->
+        <div class="col-lg-6">
+          <div class="hero-content text-white">
+            <h1 class="fw-bold mb-4" style="font-size: 50px;">Build A Website That Drives Sales</h1>
+            <p class="mb-4" style="font-size: 18px;">
+              Not just a website. This is your silent sales team running 24/7. Built to attract the right audience,
+              keep them engaged, and turn them into paying customers – even while you sleep.
+            </p>
+            
+            <div class="tick-design">
+              <ul class="list-unstyled">
+                <li class="color-grey"><i class="bi bi-check tick-icon"></i>  Load your website 3 times faster</li>
+                <li class="color-grey"><i class="bi bi-check tick-icon"></i>  Full support from UK based team</li>
+                <li class="color-grey"><i class="bi bi-check tick-icon"></i>  Custom designed to fit your brand</li>
+                <li class="color-grey"><i class="bi bi-check tick-icon"></i>  Optimised for mobile and tablet</li>
+              </ul>
+
+              <ul class="list-unstyled">
+                <li class="color-grey"><i class="bi bi-check tick-icon"></i>  Boost your ROI to 70 percent</li>
+                <li class="color-grey"><i class="bi bi-check tick-icon"></i>  Enterprise level security built in</li>
+                {{-- <li class="color-grey"><i class="bi bi-check tick-icon"></i>  Disaster recovery for peace of mind</li> --}}
+                <li class="color-grey"><i class="bi bi-check tick-icon"></i>  Flexible payment plans</li>
+              </ul>
             </div>
+
           </div>
         </div>
 
-        <!-- Right Form -->
+        <!-- Right Section (Form + Buttons) -->
         <div class="col-lg-6">
           <div class="hero-visual">
             <form method="post" class="php-email-form">
@@ -160,7 +183,7 @@
                   <input type="text" name="name" class="form-control border-green" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" name="email" class="form-control border-green lead-input"  data-type="email"  placeholder="Your Email" required>
+                  <input type="email" name="email" class="form-control border-green lead-input" placeholder="Your Email" required>
                 </div>
               </div>
 
@@ -177,16 +200,27 @@
                   </select>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="number" name="phone" class="form-control border-green lead-input" data-type="number" placeholder="Your Phone" required>
+                  <input type="number" name="phone" class="form-control border-green lead-input" placeholder="Your Phone" required>
                 </div>
               </div>
+
               <div class="form-group mt-3">
                 <textarea class="form-control border-green" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
               </div>
+
               <div class="form-submit mt-3">
                 <button type="submit" class="btn btn-primary w-100">Reach Us</button>
               </div>
             </form>
+
+            <!-- WhatsApp & Get Started Buttons Below the Form -->
+            {{-- <div class="hero-actions gap-3 mt-3 d-flex justify-content-center justify-content-lg-start">
+              <a href="https://wa.me/923114810055" class="btn btn-success" style="width: 125px;display: flex;gap: 8px;justify-content:center;">
+                WhatsApp <i class="bi bi-whatsapp"></i>
+              </a>
+              <a href="{{ route('contact') }}" class="btn btn-outline-light">Get Started</a>
+            </div> --}}
+
           </div>
         </div>
 
@@ -194,7 +228,7 @@
     </div>
   </section>
 
-    <section id="hero-about" >
+  <section id="hero-about" >
 
       <div class="container">
          <div class="content">
@@ -1637,15 +1671,15 @@
               <li class="d-flex align-items-start mb-3">
                 <span class="icon-circle me-3">🌐</span>
                 <div>
-                  <strong>Free Hosting for 1 Month</strong><br>
+                  <strong>Free Domain & Web Deployment</strong><br>
                   <small>Reliable Hosting. No Extra Charges</small>
                 </div>
               </li>
               <li class="d-flex align-items-start mb-3">
                 <span class="icon-circle me-3">📈</span>
                 <div>
-                  <strong>Free SEO for 1 Month</strong><br>
-                  <small>Boost Rankings on Google from Day One</small>
+                  <strong>3 Free Scalable Marketing Strategies</strong><br>
+                  <small>Boost your online presence & start ranking from Day One</small>
                 </div>
               </li>
               <li class="d-flex align-items-start mb-3">
@@ -1721,7 +1755,7 @@ $(document).ready(function() {
 
     setTimeout(function() {
        $('#model-open-show').trigger('click');
-    }, 30000);
+    }, 20000);
 
     $('.php-email-form').submit(function(e) {
         e.preventDefault();
