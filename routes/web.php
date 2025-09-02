@@ -31,6 +31,9 @@ Route::get('/privacy-policy', function () {return view('privacy');});
 Route::get('/terms-conditions', function () {return view('terms');});
 Route::post('/forms/contact', [ContactController::class, 'store'])->name('contact.submit');
 
+// Lead AJAX route
+Route::post('/leads/store', [App\Http\Controllers\LeadController::class, 'store'])->name('leads.store');
+
 // Language switcher
 Route::get('/{locale}', function ($locale) {
     if (in_array($locale, ['en', 'ar'])) {

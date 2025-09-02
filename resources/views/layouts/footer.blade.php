@@ -41,7 +41,7 @@
         <p>Near DHA Phase 1,</p>
         <p>Lahore, Pakistan</p>
         <p class="mt-4"><strong>Phone:</strong> <span>+92 313 4672846</span></p>
-        <p><strong>Email:</strong> <a href="mailto:thepakcoder@gmail.com"><span>thepakcoder@gmail.com</span></a></p>
+        <p><strong>Email:</strong> <a href="mailto:contact@pakcoder.com"><span>contact@pakcoder.com</span></a></p>
       </div>
     </div>
   </div>
@@ -56,3 +56,29 @@
     </div>
   </div>
 </footer>
+<script>
+
+$(document).ready(function() {
+
+  $(document).on('blur', '.lead-input', function() {
+    var value = $(this).val();
+    var type = $(this).attr('data-type');
+    if (value) {
+      var data = {};
+      data[type] = value;
+      $.ajax({
+        url: "{{ route('leads.store') }}",
+        method: 'POST',
+        data: Object.assign(data, {_token: '{{ csrf_token() }}'}),
+        success: function(response) {
+          // Optionally show a success message
+        },
+        error: function(xhr) {
+          // Optionally show an error message
+        }
+      });
+    }
+  });
+  
+});
+</script>

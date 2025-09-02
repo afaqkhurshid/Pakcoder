@@ -55,8 +55,8 @@
               <div class="contact-text">
                 <h4>Email</h4>
                 <p>
-                  <a href="mailto:thepakcoder@gmail.com" class="text-decoration-none">
-                    thepakcoder@gmail.com
+                  <a href="mailto:contact@pakcoder.com" class="text-decoration-none">
+                    contact@pakcoder.com
                   </a>
                 </p>
               </div>
@@ -95,15 +95,15 @@
               @csrf
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control border-green" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control border-green lead-input" data-type="email" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
                 <div class="row mt-3">
                   <div class="col-md-6 form-group">
-                    <select class="form-control" name="service" id="service" required>
+                    <select class="form-control  border-green" name="service" id="service" required>
                       <option value="" disabled selected>What service do you need?</option>
                       <option value="web-development">Web Development (Laravel/PHP)</option>
                       <option value="wordpress">WordPress Development</option>
@@ -113,11 +113,11 @@
                     </select>
                   </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
-                      <input type="number" name="phone" class="form-control" id="phone" placeholder="Your Phone" required>
+                      <input type="number" name="phone" class="form-control border-green lead-input" data-type="number" id="phone" placeholder="Your Phone" required>
                   </div>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+                <textarea class="form-control border-green" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
               </div>
 
               <div class="my-3">
@@ -140,6 +140,87 @@
       {{-- </div> --}}
     </div>
   </section><!-- /Contact Section -->
+  
+<script>
+
+$(document).ready(function() {
+
+    $('.php-email-form').submit(function(e) {
+        e.preventDefault();
+        
+        var form = $(this);
+        var submitBtn = form.find('button[type="submit"]');
+
+        if(submitBtn.length === 0) {
+            console.error('Submit button not found in the form');
+            return;
+        }
+        
+        var originalBtnText = submitBtn.html();
+        submitBtn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...');
+        
+        $.ajax({
+            url: form.attr('action') || '{{ route("contact.submit") }}', // Fallback if action attribute is missing
+            type: 'post',
+            data: form.serialize(),
+            dataType: 'json',
+            success: function(response) {
+                if(response.success) {
+                    // Show success message
+                    form.prepend(
+                        '<div class="alert alert-success alert-dismissible fade show" role="alert">' +
+                        'Thank you! Your message has been sent. We will contact you soon.' +
+                        '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                        '</div>'
+                    );
+                    
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-17487709730/Xww0CP-WpowbEKKM5ZJB'
+                    });
+                    
+                    // Reset form
+                    form.trigger('reset');
+                } else {
+                    // Show error message
+                    form.prepend(
+                        '<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
+                        'Error: ' + (response.message || 'Something went wrong. Please try again.') +
+                        '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                        '</div>'
+                    );
+                }
+            },
+            error: function(xhr) {
+                var errorMessage = 'An error occurred. Please try again.';
+                if(xhr.responseJSON && xhr.responseJSON.message) {
+                    errorMessage = xhr.responseJSON.message;
+                } else if(xhr.statusText) {
+                    errorMessage = xhr.statusText;
+                }
+                
+                form.prepend(
+                    '<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
+                    errorMessage +
+                    '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                    '</div>'
+                );
+            },
+            complete: function() {
+                submitBtn.prop('disabled', false).html(originalBtnText);
+                
+                // Remove alerts after 5 seconds
+                setTimeout(function() {
+                    form.find('.alert').fadeOut(500, function() {
+                        $(this).remove();
+                    });
+                }, 5000);
+            }
+        });
+    });
+
+});
+
+</script>
 
 
 </main>

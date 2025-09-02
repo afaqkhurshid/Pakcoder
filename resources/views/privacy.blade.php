@@ -122,7 +122,7 @@
             <div class="contact-content">
               <h4>Questions About Privacy?</h4>
               <p>If you have any questions about this Privacy Policy, feel free to contact us.</p>
-              <a href="mailto:thepakcoder@gmail.com" class="contact-link">Contact Support</a>
+              <a href="mailto:contact@pakcoder.com" class="contact-link">Contact Support</a>
             </div>
           </div>
         </div>
