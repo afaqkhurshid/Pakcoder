@@ -133,6 +133,22 @@
     width: 500px;
     height: 250px;
   }
+
+  .modal-body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  @media (min-width: 768px) {
+    .modal-dialog {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+  @media (min-width: 992px) {
+    .modal-dialog {
+      max-width: 850px;
+    }
+  }
 </style>
 
 <main class="main">
@@ -211,16 +227,15 @@
               <div class="form-submit mt-3">
                 <button type="submit" class="btn btn-primary w-100">Reach Us</button>
               </div>
+
+              <!-- WhatsApp & Get Started Buttons Below the Form -->
+              <div class="mt-3" style="width: 100%">
+                <a href="https://wa.me/923114810055" class="btn btn-success" style="background-color: #198754; border-color: #198754; width: 100%; display: flex; gap: 8px; justify-content: center;">
+                  WhatsApp <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
+              {{-- <a href="{{ route('contact') }}" class="btn btn-outline-light">Get Started</a> --}}
             </form>
-
-            <!-- WhatsApp & Get Started Buttons Below the Form -->
-            {{-- <div class="hero-actions gap-3 mt-3 d-flex justify-content-center justify-content-lg-start">
-              <a href="https://wa.me/923114810055" class="btn btn-success" style="width: 125px;display: flex;gap: 8px;justify-content:center;">
-                WhatsApp <i class="bi bi-whatsapp"></i>
-              </a>
-              <a href="{{ route('contact') }}" class="btn btn-outline-light">Get Started</a>
-            </div> --}}
-
           </div>
         </div>
 
@@ -905,10 +920,11 @@
 
     </div>
 
-  </section><!-- /Services Section -->
+  </section>
+  <!-- /Services Section -->
 
   <!-- Call To Action Section -->
-  <!-- <section id="call-to-action" class="call-to-action section light-background">
+  <section id="call-to-action" class="call-to-action section light-background">
     <div class="container">
       <div class="cta-wrapper">
         <div class="cta-shapes">
@@ -979,7 +995,7 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- /Call To Action Section -->
 
 
@@ -1644,110 +1660,125 @@
 </div>
 
 <div class="modal fade" id="offerModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered" style=" margin: 0 auto;">
     <div class="modal-content">
 
       <div class="modal-header border-0">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      
-      <div class="modal-body p-4">
-        <div class="row g-4">
+
+      <div class="modal-body p-3">
+        <div class="row g-4 flex-md-row">
           
-          <!-- Left Section -->
-          <div class="col-12 col-md-6">
-            <h4 class="fw-bold mb-4">
-              🚀 Get Your Website, Plus <br> So Much More
+          <!-- Left Section (Offers) -->
+          <div class="col-12 col-md-6 d-none d-md-block">
+            <h4 class="fw-bold mb-4 text-center text-md-start">
+              🚀 Get Your Website, Plus <br class="d-none d-md-block"> So Much More
             </h4>
 
-            <ul class="list-unstyled">
+            <ul class="list-unstyled small">
               <li class="d-flex align-items-start mb-3">
-                <span class="icon-circle me-3">🎨</span>
+                <span class="icon-circle me-2">🎨</span>
                 <div>
                   <strong>Free Business Logo Design</strong><br>
                   <small>Crafted to Match Your Brand Vision</small>
                 </div>
               </li>
               <li class="d-flex align-items-start mb-3">
-                <span class="icon-circle me-3">🌐</span>
+                <span class="icon-circle me-2">🌐</span>
                 <div>
                   <strong>Free Domain & Web Deployment</strong><br>
                   <small>Reliable Hosting. No Extra Charges</small>
                 </div>
               </li>
               <li class="d-flex align-items-start mb-3">
-                <span class="icon-circle me-3">📈</span>
+                <span class="icon-circle me-2">📈</span>
                 <div>
                   <strong>3 Free Scalable Marketing Strategies</strong><br>
                   <small>Boost your online presence & start ranking from Day One</small>
                 </div>
               </li>
               <li class="d-flex align-items-start mb-3">
-                <span class="icon-circle me-3">💷</span>
+                <span class="icon-circle me-2">💷</span>
                 <div>
                   <strong>Spread Your Cost Over 12 Months</strong><br>
                   <small>Start Now. Pay Monthly, Stress-Free.</small>
                 </div>
               </li>
             </ul>
-
-            {{-- <hr> --}}
-            {{-- <p class="small mb-0">🌟 We’re rated <strong>4.7 ★</strong> on Google with 98% five-star reviews.</p> --}}
           </div>
 
           <!-- Right Section (Form) -->
           <div class="col-12 col-md-6">
-            <h4 class="fw-bold mb-3">Ready to Build Something Great? Let’s Talk.</h4>
-            <p class="small text-muted">⏳ This is a limited-time offer. Fill in the form to claim your bonuses.</p>
+            <h4 class="fw-bold mb-3 text-center text-md-start">Ready to Build Something Great? Let’s Talk.</h4>
+            <ul class="d-md-none">
+              <li>
+                <strong>Free Business Logo Design</strong><br>
+              </li>
+              <li>
+                <strong>Free Domain & Web Deployment</strong><br>
+              </li>
+              <li>
+                <strong>3 Free Scalable Marketing Strategies</strong><br>
+              </li>
+              <li>
+                <strong>Spread Your Cost Over 12 Months</strong><br>
+              </li>
+            </ul>
+            <p class="small text-muted text-center text-md-start">
+              ⏳ This is a limited-time offer. Fill in the form to claim your bonuses.
+            </p>
 
             <!-- Laravel Form -->
-              <form id="contactForm" method="post" class="php-email-form">
-                  @csrf
-                  <div class="row">
-                      <div class="col-md-6 mb-2">
-                      <label for="name" class="form-label">Full Name</label>
-                      <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
-                      </div>
+            <form id="contactForm" method="post" class="php-email-form">
+              @csrf
+              <div class="row">
+                <div class="col-12 col-md-6 mb-2">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
 
-                      <div class="col-md-6 mb-2">
-                      <label for="phone" class="form-label">Phone No</label>
-                      <input type="number" id="phone" name="phone" class="form-control lead-input" data-type="number" placeholder="Your Phone" required>
-                      </div>
+                <div class="col-12 col-md-6 mb-2">
+                  <label for="phone" class="form-label">Phone No</label>
+                  <input type="number" id="phone" name="phone" class="form-control lead-input" data-type="number" placeholder="Your Phone" required>
+                </div>
 
-                      <div class="col-md-6 mb-2">
-                      <label for="service" class="form-label">Service Required</label>
-                      <select id="service" name="service" class="form-control select-drop-down" required>
-                          <option value="" disabled selected>What service do you need?</option>
-                          <option value="web-development">Web Development (Laravel/PHP)</option>
-                          <option value="wordpress">WordPress Development</option>
-                          <option value="shopify">Shopify/eCommerce</option>
-                          <option value="ui-ux">UI/UX Design</option>
-                          <option value="digital-marketing">Digital Marketing</option>
-                          <option value="other">Other</option>
-                      </select>
-                      </div>
+                <div class="col-12 col-md-6 mb-2">
+                  <label for="service" class="form-label">Service Required</label>
+                  <select id="service" name="service" class="form-control select-drop-down" required>
+                    <option value="" disabled selected>What service do you need?</option>
+                    <option value="web-development">Web Development (Laravel/PHP)</option>
+                    <option value="wordpress">WordPress Development</option>
+                    <option value="shopify">Shopify/eCommerce</option>
+                    <option value="ui-ux">UI/UX Design</option>
+                    <option value="digital-marketing">Digital Marketing</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
 
-                      <div class="col-md-6 mb-2">
-                      <label for="email" class="form-label">Email address</label>
-                      <input type="email" id="email" name="email" class="form-control lead-input" data-type="email" placeholder="Your Email" required>
-                      </div>
+                <div class="col-12 col-md-6 mb-2">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" id="email" name="email" class="form-control lead-input" data-type="email" placeholder="Your Email" required>
+                </div>
 
-                      <div class="col-12 mb-2">
-                      <label for="message" class="form-label">Message</label>
-                      <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about your project" required></textarea>
-                      </div>
-                  </div>
-                  <button type="submit" class="btn btn-success w-100">Submit</button>
-              </form>
-
-
+                <div class="col-12 mb-2">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" name="message" class="form-control" rows="3" placeholder="Tell us about your project" required></textarea>
+                </div>
+              </div>
+              <div class="sticky-bottom bg-white p-2">
+                <button type="submit" class="btn btn-success w-100">Submit</button>
+              </div>
+            </form>
           </div>
-
+          
         </div>
       </div>
+
     </div>
   </div>
 </div>
+
 
 <script>
 
@@ -1755,7 +1786,7 @@ $(document).ready(function() {
 
     setTimeout(function() {
        $('#model-open-show').trigger('click');
-    }, 20000);
+    }, 1000);
 
     $('.php-email-form').submit(function(e) {
         e.preventDefault();
