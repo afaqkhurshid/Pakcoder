@@ -9,7 +9,7 @@ class ProjectTechnologyPivot extends Model
 {
     use HasFactory;
 
-    protected $table = 'project_technology';
+    protected $table = 'project_technology_pivot';
     
     protected $fillable = [
         'id',
@@ -24,6 +24,6 @@ class ProjectTechnologyPivot extends Model
 
     public function technology()
     {
-        return $this->belongsTo(ProjectTechnology::class, 'project_id', 'id');
+        return $this->belongsTo(Technology::class, 'project_id', 'id');
     }
 }

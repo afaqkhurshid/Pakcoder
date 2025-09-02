@@ -17,8 +17,8 @@
       </div>
     </div><!-- End Page Title -->
 
-    <div class="container py-5">
-        <h2>Login</h2>
+    <div class="container py-5 w-full md:w-[500px] mx-auto">
+        <h2 class="font-bold text-xl pb-3">Login</h2>
         <form method="POST" action="{{ route('login') }}">
             @csrf
             <div class="mb-3">

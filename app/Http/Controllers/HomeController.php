@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ProjectStack;
+use App\Models\Stacks;
 use Illuminate\Http\Request;
-use App\Models\ProjectTechnology;
+use App\Models\Technology;
 
 class HomeController extends Controller
 {

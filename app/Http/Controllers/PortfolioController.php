@@ -3,85 +3,87 @@
 namespace App\Http\Controllers;
 
 use App\Models\Project;
+use App\Models\Technology;
+use App\Models\Stacks;
 use Illuminate\Http\Request;
-use App\Models\ProjectTechnology;
 use App\Models\ProjectTechnologyPivot;
 
 class PortfolioController extends Controller
 {
-    // public function list ()
+    // public function index ($slug = null, $pname = null)
     // {
     //     // return view('portfolio');
     //     try {
-    //         // Fetch all projects with their relationships
-    //         // $projects = Project::with(['technologies', 'stacks', 'gallery'])->get();
-            
-    //         // Or if you want to fetch a specific project for the detail view
-    //         // $project = Project::with(['technologies', 'stacks', 'gallery'])
-    //         //                 ->find($id); // Where $id is the project ID
-    //         // return view('portfolio', compact('projects'));
-            
+    //         if ($pname) {
+    //             // Fetch project with specific id
+    //             // $project = Project::with(['technologies', 'stacks', 'gallery'])
+    //             //                 ->find($id); // Where $id is the project ID
+    //             $project = Project::where('slug', $pname)->with(['technologies', 'stacks', 'gallery'])->first();
+    //             // dd($project);
+    //             return view('portfolio-id', compact('project'));
+    //         } elseif ($slug) {
+    //             $technologies = ProjectTechnology::select('id', 'name', 'slug')->get();
+    //             $technology_array = [];
+    //             foreach ($technologies as $technology) {
+    //                 $technology_array[] = $technology->slug;
+    //             }
+    //             $technology_exists = in_array($slug, $technology_array);
+    //             if ($technology_exists == "true") {
+    //                 $tData = ProjectTechnology::where('slug', $slug)->first();
+    //                 return view('portfolio', compact('tData'));
+    //             } else {
+    //                 $technology = Stacks::where('slug', $slug)->first();
+    //                 return view('portfolio-slug', compact('technology'));
+    //             }  
+    //         }
+    //         else {
+    //             // Fetch all projects with their relationships
+    //             $data = Project::with(['technologies', 'stacks', 'gallery'])->get();
+    //             return view('portfolio', compact('data'));
+    //         }           
     //     } catch (\Exception $e) {
     //         return back()->with('error', 'Error fetching projects: ' . $e->getMessage());
     //     }
     // }
-
-    public function index ($slug = null, $id = null)
+    
+    public function index ($slug = null, $pname = null)
     {
-        // return view('portfolio');
         try {
-            if ($id) {
-                // Fetch project with specific id
-                $project = Project::with(['technologies', 'stacks', 'gallery'])
-                                ->find($id); // Where $id is the project ID
-                return view('portfolio-id', compact('project'));
-            } elseif ($slug) {
-                $technology = ProjectTechnology::where('slug', $slug)->first();
-                return view('portfolio-slug', compact('technology'));
+            if ($pname) {
+                $project = Project::where('slug', $pname)->with(['technologies', 'stacks', 'gallery'])->first();
+                return view('portfolio-technology-details', compact('project'));
             }
-            else {
-                // Fetch all projects with their relationships
+            if ($slug) {
+                $projects = Technology::where('slug', $slug)->first()->projects;
+            } else {
                 $projects = Project::with(['technologies', 'stacks', 'gallery'])->get();
-                return view('portfolio', compact('projects'));
-            }         
+            }
+
+            return view('portfolio', compact('projects'));
+
         } catch (\Exception $e) {
             return back()->with('error', 'Error fetching projects: ' . $e->getMessage());
         }
     }
-    
-    // public function portfolioSlug ($name, $id = null)
-    // {
-    //     // dd($name);
-    //     // return view('portfolio');
-    //     try {
-    //             if ($id) {
-    //                 // Fetch project with specific id
-    //                 $project = Project::with(['technologies', 'stacks', 'gallery'])
-    //                                 ->find($id); // Where $id is the project ID
-    //                 return view('portfolio-id', compact('project'));
-    //             } else {
-    //                     $technology = ProjectTechnology::where('name', $name)->first();
-    //                     // dd($technology->projects[0]);
-    //         //             // dd($technologyid->id);
-    //         //             // $project_id = ProjectTechnologyPivot::select('id', 'project_id', 'technology_id')->find($projectsid->id);
-    //         //             // $projectsid = ProjectTechnologyPivot::where('technology_id', $technology->id)->get();
-    //         //             // dd($projectsid);
-    //         //             // foreach ($projectsid as $project) {
-    //         //             //     $projects = Project::with(['technologies', 'stacks', 'gallery'])->find($project->id);
-    //         //             //     return view('portfolio-list', compact('projects'));
-    //         //             //     // dd($projects->technologies);
-    //         //             // }
-    //         //             // Fetch all projects with their relationships
-    //         //             // $projects = Project::with(['technologies', 'stacks', 'gallery'])->get();
-                        
-    //         //             // Or if you want to fetch a specific project for the detail view
-    //         //             // $project = Project::with(['technologies', 'stacks', 'gallery'])
-    //         //             //                 ->find($id); // Where $id is the project ID
-    //                     return view('portfolio-slug', compact('technology'));
-    //         //             // return view('portfolio-list', compact('projects'));
-    //      } 
-    //     } catch (\Exception $e) {
-    //         return back()->with('error', 'Error fetching projects: ' . $e->getMessage());
-    //     }
-    // }
+
+    public function projectStacks ($slug = null, $pname = null)
+    {
+        try {
+            if ($pname) {
+                $project = Project::where('slug', $pname)->with(['technologies', 'stacks', 'gallery'])->first();
+                return view('portfolio-stack-details', compact('project'));
+            }
+            if ($slug) {
+                $projects = Stacks::where('slug', $slug)->first()->projects;
+            } 
+            else {
+                $projects = Project::with(['technologies', 'stacks', 'gallery'])->get();
+            }
+
+            return view('portfolio-stacks', compact('projects'));
+
+        } catch (\Exception $e) {
+            return back()->with('error', 'Error fetching projects: ' . $e->getMessage());
+        }
+    }
 }

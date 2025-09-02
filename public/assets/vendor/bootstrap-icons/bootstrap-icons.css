@@ -352,7 +352,7 @@ url("./fonts/bootstrap-icons.woff?e34853135f9e39acf64315236852cd5a") format("wof
 .bi-cart2::before { content: "\f243"; }
 .bi-cart3::before { content: "\f244"; }
 .bi-cart4::before { content: "\f245"; }
-.bi-cash-stack::before { content: "\f246"; }
+.bi-cash-Stacks::before { content: "\f246"; }
 .bi-cash::before { content: "\f247"; }
 .bi-cast::before { content: "\f248"; }
 .bi-chat-dots-fill::before { content: "\f249"; }
@@ -810,7 +810,7 @@ url("./fonts/bootstrap-icons.woff?e34853135f9e39acf64315236852cd5a") format("wof
 .bi-hdd-rack-fill::before { content: "\f40e"; }
 .bi-hdd-rack::before { content: "\f40f"; }
 .bi-hdd-stack-fill::before { content: "\f410"; }
-.bi-hdd-stack::before { content: "\f411"; }
+.bi-hdd-Stacks::before { content: "\f411"; }
 .bi-hdd::before { content: "\f412"; }
 .bi-headphones::before { content: "\f413"; }
 .bi-headset::before { content: "\f414"; }
@@ -1182,7 +1182,7 @@ url("./fonts/bootstrap-icons.woff?e34853135f9e39acf64315236852cd5a") format("wof
 .bi-square-fill::before { content: "\f582"; }
 .bi-square-half::before { content: "\f583"; }
 .bi-square::before { content: "\f584"; }
-.bi-stack::before { content: "\f585"; }
+.bi-Stacks::before { content: "\f585"; }
 .bi-star-fill::before { content: "\f586"; }
 .bi-star-half::before { content: "\f587"; }
 .bi-star::before { content: "\f588"; }
@@ -1505,7 +1505,7 @@ url("./fonts/bootstrap-icons.woff?e34853135f9e39acf64315236852cd5a") format("wof
 .bi-window-fullscreen::before { content: "\f6cf"; }
 .bi-window-plus::before { content: "\f6d0"; }
 .bi-window-split::before { content: "\f6d1"; }
-.bi-window-stack::before { content: "\f6d2"; }
+.bi-window-Stacks::before { content: "\f6d2"; }
 .bi-window-x::before { content: "\f6d3"; }
 .bi-xbox::before { content: "\f6d4"; }
 .bi-ethernet::before { content: "\f6d5"; }
@@ -2031,7 +2031,7 @@ url("./fonts/bootstrap-icons.woff?e34853135f9e39acf64315236852cd5a") format("wof
 .bi-sim-slash-fill::before { content: "\f8d4"; }
 .bi-sim-slash::before { content: "\f8d5"; }
 .bi-sourceforge::before { content: "\f8d6"; }
-.bi-substack::before { content: "\f8d7"; }
+.bi-subStacks::before { content: "\f8d7"; }
 .bi-threads-fill::before { content: "\f8d8"; }
 .bi-threads::before { content: "\f8d9"; }
 .bi-transparency::before { content: "\f8da"; }

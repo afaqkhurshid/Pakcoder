@@ -4,10 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use App\Models\Project;
 use Illuminate\Support\Str;
-use App\Models\ProjectStack;
+use App\Models\Stacks;
 use Illuminate\Http\Request;
 use App\Models\ProjectGallery;
-use App\Models\ProjectTechnology;
+use App\Models\Technology;
 use App\Http\Controllers\Controller;
 use App\Models\ProjectTechnologyPivot;
 use Illuminate\Support\Facades\Storage;
@@ -16,23 +16,40 @@ class ProjectController extends Controller
 {
     public function create()
     {
-        $technologies = ProjectTechnology::all();
-        $stacks = ProjectStack::all();
-        return view('Admin.components.Portfolio.add-project', compact('technologies', 'stacks'));
+        $technologies = Technology::all();
+        $technologiesArray = [];
+        foreach ($technologies as $tech) {
+            $technologiesArray [] = [
+                'id' => $tech->id,
+                'name' => $tech->name,
+                'slug' => $tech->slug,
+            ];
+        }
+        $stacks = Stacks::all();
+        foreach ($stacks as $stack) {
+            $stackArray [] = [
+                'id' => $stack->id,
+                'name' => $stack->name,
+                'slug' => $stack->slug,
+            ];
+        }
+        
+        return view('Admin.components.Portfolio.add-project', compact('technologiesArray', 'stackArray'));
     }
     
     public function store(Request $request)
     {
         try {
+            // dd($request);
             // Validate the request data
             $validated = $request->validate([
                 'title' => 'required|string|max:255',
                 'project_url' => 'nullable|url',
                 'description' => 'required|string',
                 'technologies' => 'required|array',
-                'technologies' => 'exists:project_technologies,id',
+                'technologies.*' => 'exists:technologies,id',
                 'stacks' => 'required|array',
-                'stacks.*' => 'exists:project_stacks,id',
+                'stacks.*' => 'exists:stacks,id',
                 'active_users' => 'nullable|integer',
                 'client_satisfaction' => 'nullable|integer|min:0|max:100',
                 'months_development' => 'nullable|integer',
@@ -99,10 +116,10 @@ class ProjectController extends Controller
                 }
             }
 
-            return redirect()->route('projects.create')->with('success', 'Project created successfully!');
+            return redirect()->route('admin.create')->with('success', 'Project created successfully!');
 
         } catch (\Illuminate\Validation\ValidationException $e) {
-
+            dd($e->errors());
             return back()->withInput()->with('error', 'Error creating project: ' . $e->getMessage());
 
         }

@@ -8,16 +8,16 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('project_stack', function (Blueprint $table) {
+        Schema::create('project_stack_pivot', function (Blueprint $table) {
             $table->id();
             $table->foreignId('project_id')->constrained('projects')->onDelete('cascade');
-            $table->foreignId('stack_id')->constrained('project_stacks')->onDelete('cascade');
+            $table->foreignId('stack_id')->constrained('stacks')->onDelete('cascade');
             $table->timestamps();
         });
     }
 
     public function down()
     {
-        Schema::dropIfExists('project_stack');
+        Schema::dropIfExists('project_stack_pivot');
     }
 };

@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use App\Models\ProjectStack;
-use App\Models\ProjectTechnology;
+use App\Models\Stacks;
+use App\Models\Technology;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -16,7 +16,6 @@ class LayoutServiceProvider extends ServiceProvider
     {
         //
     }
-
     /**
      * Bootstrap services.
      */
@@ -24,8 +23,8 @@ class LayoutServiceProvider extends ServiceProvider
     {
         // Share technologies and stacks with all views
         View::composer('*', function ($view) {
-            $technologies = ProjectTechnology::select('name', 'slug')->get();
-            $stacks = ProjectStack::select('name')->get();
+            $technologies = Technology::select('name', 'slug')->get();
+            $stacks = Stacks::select('name', 'slug')->get();
             
             $view->with([
                 'technologies' => $technologies,

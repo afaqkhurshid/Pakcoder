@@ -6,14 +6,13 @@
         <div class="page-wrapper">
             <!-- Page title section -->
             <div class="page-title dark-background">
-                <div class="container position-relative">
-                    <h1>Add New Project</h1>
-                    <p>Create a new project entry for your portfolio</p>
+                <div class="container position-relative pt-6">
+                    <h1 class="font-bold text-xl pl-[105px]">Add New Project</h1>
                 </div>
             </div>
 
             <!-- Main form content -->
-            <section class="section">
+            <section class="section py-6">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-10">
@@ -44,7 +43,7 @@
                                         <div class="mb-4">
                                             <label for="description" class="form-label">Project Description*</label>
                                             <textarea class="form-control @error('description') is-invalid @enderror" 
-                                                    id="descriptions" name="description" rows="5">{{ old('description') }}</textarea>
+                                                    id="description" name="description" rows="5">{{ old('description') }}</textarea>
                                             @error('description')
                                                 <div class="invalid-feedback">{{ $message }}</div>
                                             @enderror
@@ -56,9 +55,9 @@
                                                 <label for="technologies" class="form-label ">Technology*</label>
                                                 <select class="form-select @error('technologies') is-invalid @enderror" 
                                                         id="technologies" name="technologies[]" multiple required>
-                                                    @foreach($technologies as $tech)
-                                                        <option value="{{ $tech->id }}" {{ old('technologies') == $tech->id ? 'selected' : '' }}>
-                                                            {{ $tech->name }}
+                                                    @foreach($technologiesArray as $tech)
+                                                        <option value="{{ $tech['id']}}">
+                                                            {{ $tech['name'] }}
                                                         </option>
                                                     @endforeach
                                                 </select>
@@ -71,9 +70,9 @@
                                                 <label for="stacks" class="form-label">Project Stack*</label>
                                                 <select class="form-select @error('stacks') is-invalid @enderror" 
                                                         id="stacks" name="stacks[]" multiple required>
-                                                    @foreach($stacks as $stack)
-                                                        <option value="{{ $stack->id }}" {{ old('stacks') == $stack->id ? 'selected' : '' }}>
-                                                            {{ $stack->name }}
+                                                    @foreach($stackArray as $stack)
+                                                        <option value="{{ $stack['id'] }}">
+                                                            {{ $stack['name'] }}
                                                         </option>
                                                     @endforeach
                                                 </select>
@@ -203,25 +202,14 @@
                 $('#technologies').select2();
                 $('#stacks').select2();
             });
-            document.addEventListener('DOMContentLoaded', function() {
-                // Initialize only if elements exist
-                const editors = [
-                    { id: 'descriptions', instance: null },
-                    { id: 'challenges', instance: null },
-                    { id: 'solutions', instance: null }
-                ];
-                
-                editors.forEach(editor => {
-                    const element = document.querySelector(`#${editor.id}`);
-                    if (element) {
-                        ClassicEditor.create(element)
-                            .then(newEditor => {
-                                editor.instance = newEditor;
-                            })
-                            .catch(error => {
-                                console.error(`Failed to initialize ${editor.id}:`, error);
-                            });
-                    }
+            document.addEventListener('DOMContentLoaded', function () {
+                tinymce.init({
+                    selector: '#description, #challenges, #solutions', // which textareas to enhance
+                    height: 250,
+                    menubar: false,
+                    plugins: 'lists link image table code help wordcount',
+                    toolbar: 'undo redo | bold italic underline | bullist numlist | link image | table | code',
+                    branding: false
                 });
             });
         </script>

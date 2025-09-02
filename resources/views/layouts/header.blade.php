@@ -25,10 +25,10 @@
         <ul>
           <li><a href="{{ url('/') }}" class="active">Home</a></li>
           <li><a href="{{ url('/') }}#about">About</a></li>
-          {{-- <li><a href="{{ url('/') }}#services">Services</a></li>
-          <li><a href="{{ url('/') }}#portfolio">Portfolio</a></li> --}}
+          {{-- <li><a href="{{ url('/') }}#services">Services</a></li> --}}
           <li><a href="{{ url('/') }}#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          {{-- <li><a href="{{ route('portfolio') }}">Portfolio</a></li> --}}
+          <li class="dropdown"><a href="{{ route('portfolio') }}"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               @foreach ($technologies as $technology)
                 <li><a href="{{ route('portfolio', ["slug" => $technology->slug]) }}">{{ $technology->name }}</a></li>
@@ -48,7 +48,7 @@
           <li class="dropdown"><a href="#"><span>Stacks</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               @foreach ($stacks as $stack)
-                <li><a href="#">{{ $stack->name }}</a></li>
+                <li><a href="{{ route('stacks', ["slug" => $stack->slug]) }}">{{ $stack->name }}</a></li>
               @endforeach
             </ul>
           </li>
